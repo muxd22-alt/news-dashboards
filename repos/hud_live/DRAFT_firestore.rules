@@ -1,0 +1,111 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 0. Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helpers ---
+    
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // --- User Validation ---
+    function isValidUser(data) {
+      return data.uid == request.auth.uid 
+        && data.role in ['client', 'vendor']
+        && data.fullName is string && data.fullName.size() <= 100
+        && data.email is string && data.email.size() <= 100
+        && (data.get('phone', '') is string && data.get('phone', '').size() <= 20)
+        && data.createdAt == request.time;
+    }
+
+    // --- Request Validation ---
+    function isValidRequest(data) {
+      return data.clientId == request.auth.uid
+        && data.title is string && data.title.size() <= 200
+        && data.type is string && data.type.size() <= 50
+        && data.service is string && data.service.size() <= 100
+        && data.location is string && data.location.size() <= 50
+        && data.status in ['live', 'expired', 'completed']
+        && data.createdAt == request.time
+        && data.expiresAt is timestamp;
+    }
+
+    // --- Bid Validation ---
+    function isValidBid(data, requestId) {
+      return data.requestId == requestId
+        && data.vendorId == request.auth.uid
+        && data.amount is number && data.amount > 0
+        && data.status in ['pending', 'accepted', 'rejected']
+        && data.createdAt == request.time;
+    }
+
+    // --- Collections ---
+
+    match /users/{userId} {
+      allow get: if isSignedIn();
+      allow list: if false; // Users shouldn't be listable for privacy
+      allow create: if isOwner(userId) && isValidUser(incoming());
+      allow update: if isOwner(userId) && isValidUser(incoming())
+        && incoming().role == existing().role // Immutable role
+        && incoming().createdAt == existing().createdAt; // Immutable creation date
+    }
+
+    match /requests/{requestId} {
+      allow get: if isSignedIn();
+      allow list: if isSignedIn(); // Vendors need to see live requests
+      allow create: if isSignedIn() 
+        && isValidId(requestId)
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'client'
+        && isValidRequest(incoming());
+      
+      allow update: if isOwner(existing().clientId) 
+        && isValidRequest(incoming())
+        && (
+          // Action: Update Status
+          (incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updatedAt']) && incoming().updatedAt == request.time) ||
+          // Action: Normal Edit (not allowed to change core event details after bids start?)
+          (incoming().diff(existing()).affectedKeys().hasOnly(['title', 'description', 'budget', 'updatedAt']) && incoming().updatedAt == request.time)
+        );
+      
+      allow delete: if isOwner(existing().clientId);
+
+      match /bids/{bidId} {
+        allow get: if isSignedIn() && (isOwner(existing().vendorId) || isOwner(get(/databases/$(database)/documents/requests/$(requestId)).data.clientId));
+        allow list: if isSignedIn() && (isOwner(get(/databases/$(database)/documents/requests/$(requestId)).data.clientId));
+        
+        allow create: if isSignedIn()
+          && isValidId(bidId)
+          && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'vendor'
+          && isValidBid(incoming(), requestId)
+          // Relational check: Request must exist and be live
+          && get(/databases/$(database)/documents/requests/$(requestId)).data.status == 'live';
+        
+        allow update: if isSignedIn() && isOwner(existing().vendorId)
+          && isValidBid(incoming(), requestId)
+          && incoming().diff(existing()).affectedKeys().hasOnly(['amount', 'message', 'updatedAt'])
+          && incoming().updatedAt == request.time;
+      }
+    }
+  }
+}

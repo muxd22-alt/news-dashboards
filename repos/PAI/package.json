@@ -1,0 +1,8 @@
+{
+  "name": "private-ai-newsroom",
+  "version": "1.0.0",
+  "description": "Private AI Newsroom",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  }
+}

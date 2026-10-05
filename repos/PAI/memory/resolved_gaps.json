@@ -1,0 +1,93 @@
+[
+  {
+    "gap": {
+      "title": "Quantum Biology Discovery Explained",
+      "url": "https://youtu.be/4JBiYzjJSh4",
+      "keywords": [
+        "quantum biology",
+        "quantum computing",
+        "life sciences"
+      ],
+      "gap": "1. [Quantum coherence in photosynthesis] — Understanding how quantum effects enable near-perfect energy transfer in plant light-harvesting complexes could reveal biomimetic solar technology applications.\n2. [Orchestrated Objective Reduction theory] — Penrose-Hameroff's theory of quantum consciousness in microtubules remains controversial; investigating recent experimental evidence could clarify the boundary between quantum biology and neuroscience.\n3. [Quantum error correction in biological systems] — If biological systems perform quantum computation, they must implement error correction; identifying natural decoherence-resistance mechanisms could inspire fault-tolerant quantum computing designs.",
+      "date": "Sun, 05 Apr 2026 06:36:47 +0000"
+    },
+    "resolution_reason": "URL now in data.json (scout loop closed)",
+    "resolved_at": "2026-04-05T09:01:24.650130+00:00"
+  },
+  {
+    "gap": {
+      "title": "Hollywood's Digital Disruption Problem",
+      "url": "https://www.youtube.com/watch?v=qmameJ_c-68",
+      "keywords": [
+        "Hollywood",
+        "entertainment industry",
+        "tech disruption",
+        "David Shapiro",
+        "digital transformation"
+      ],
+      "gap": "1. Shapiro's specific arguments and evidence — The summary indicates he likely discussed streaming economics, audience migration, and AI impact, but without the transcript, the actual claims, data points, and evidence he presented cannot be verified; research the full video or supporting materials to understand his actual thesis.\n\n2. Industry counterarguments and adaptation success stories — Shapiro typically frames tech disruption as a threat to Hollywood, but the entertainment industry has historically adapted to technological shifts; research recent examples of studios successfully navigating digital transformation to evaluate whether a \"doom-and-gloom\" narrative is fully justified.\n\n3. David Shapiro's track record and analytical framework — The summary describes him as a \"known tech analyst\" with a pattern of bearish views on legacy industries, but his specific credentials, past predictions, and accuracy record are not detailed; research his background and historical content to better assess the reliability and potential biases of his analysis.",
+      "date": "Sun, 05 Apr 2026 09:53:54 +0000"
+    },
+    "resolution_reason": "URL now in data.json (scout loop closed)",
+    "resolved_at": "2026-04-05T09:56:25.251694+00:00"
+  },
+  {
+    "gap": {
+      "title": "AI, Automation, and Economic Transformation",
+      "url": "https://www.youtube.com/watch?v=UzJ_HZ9qw14",
+      "keywords": [
+        "post-labor economics",
+        "technological unemployment",
+        "AI automation",
+        "economic restructuring",
+        "universal basic income",
+        "productivity paradox",
+        "human-AI complementarity",
+        "labor market displacement",
+        "autonomous agents",
+        "physical AI",
+        "economic transition policy",
+        "technological displacement",
+        "future of work",
+        "AI governance",
+        "stakeholder capitalism"
+      ],
+      "gap": "1. Empirical evidence on the augmentation vs. displacement thesis — The summary presents this as the core tension but doesn't quantify what research actually shows about AI's real-world labor market impact; investigate peer-reviewed studies and labor force data tracking job displacement and creation rates across industries to move beyond theoretical frameworks.\n\n2. Policy feasibility and empirical trials of UBI/structural reforms — The summary lists UBI, negative income tax, and stakeholder capitalism as solutions but doesn't address implementation challenges or existing evidence; research specific pilot programs (e.g., Finland, Stockton, Kenya), political economy barriers, and funding mechanisms to understand practical transition pathways.\n\n3. Physical AI and humanoid robotics economic modeling — The summary identifies 2025 as an inflection point for physical AI but doesn't detail which industries face imminent displacement, cost trajectories, or adoption barriers; investigate specific use cases (manufacturing, logistics, eldercare), capital requirements, and economic models to assess the timeline and scale of physical automation impacts.",
+      "date": "Tue, 07 Apr 2026 08:40:27 +0000"
+    },
+    "resolution_reason": "URL now in data.json (scout loop closed)",
+    "resolved_at": "2026-04-07T08:40:59.585079+00:00"
+  },
+  {
+    "gap": {
+      "title": "How DeepMind Solved Impossible Problems",
+      "url": "https://youtu.be/C0gErQtnNFE",
+      "keywords": [
+        "AlphaGo",
+        "AlphaFold",
+        "protein folding problem",
+        "Google DeepMind",
+        "Demis Hassabis",
+        "reinforcement learning",
+        "Monte Carlo tree search",
+        "neural networks",
+        "game AI",
+        "Lee Sedol",
+        "AGI",
+        "AI safety",
+        "scientific discovery",
+        "computational biology",
+        "deep learning",
+        "AI capability",
+        "narrow AI",
+        "artificial general intelligence",
+        "AI ethics",
+        "AlphaFold 2"
+      ],
+      "gap": "1. Monte Carlo tree search integration with neural networks — The summary mentions AlphaGo combined these two techniques but doesn't explain how they work together; research how MCTS provides strategic lookahead while neural networks evaluate positions and guide search, and why this hybrid approach was more effective than either method alone.\n\n2. The biophysical complexity of protein folding — The summary notes AlphaFold solved a \"50-year grand challenge\" but doesn't explore why protein structure prediction was computationally intractable; investigate the energy landscape problem, the combinatorial explosion of possible conformations, and the physics of molecular interactions that made this historically difficult.\n\n3. The narrow AI versus AGI trajectory debate — The summary raises questions about whether DeepMind's breakthroughs represent genuine reasoning or pattern matching; research the specific arguments from AI researchers about whether capability gains in narrow domains signal progress toward artificial general intelligence or reveal fundamental limitations of current approaches.",
+      "date": "Wed, 08 Apr 2026 03:37:56 +0000"
+    },
+    "resolution_reason": "URL now in data.json (scout loop closed)",
+    "resolved_at": "2026-04-08T05:12:17.478612+00:00"
+  }
+]

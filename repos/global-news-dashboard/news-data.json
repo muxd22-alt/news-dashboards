@@ -1,0 +1,55 @@
+{
+  "status": "success",
+  "timestamp": 1774356967,
+  "count": 6,
+  "data": [
+    {
+      "id": 1,
+      "source": "bbc",
+      "title": "Major breakthrough in climate negotiations at UN summit",
+      "description": "World leaders reach historic agreement on carbon emissions reduction targets after intense negotiations at the United Nations climate conference.",
+      "time": "2 hours ago",
+      "link": "https://www.bbc.com/news/world"
+    },
+    {
+      "id": 2,
+      "source": "reuters",
+      "title": "Global markets rally as inflation fears ease",
+      "description": "Stock markets worldwide show strong gains following positive economic indicators from major economies and easing inflation concerns.",
+      "time": "3 hours ago",
+      "link": "https://www.reuters.com/markets"
+    },
+    {
+      "id": 3,
+      "source": "npr",
+      "title": "New study reveals significant progress in cancer treatment research",
+      "description": "Breakthrough immunotherapy shows promising results in clinical trials for multiple cancer types, offering new hope for patients.",
+      "time": "4 hours ago",
+      "link": "https://www.npr.org/sections/health"
+    },
+    {
+      "id": 4,
+      "source": "aljazeera",
+      "title": "Peace talks resume in conflict-torn region",
+      "description": "Diplomatic efforts intensify as international mediators work towards ceasefire agreement between warring factions.",
+      "time": "5 hours ago",
+      "link": "https://www.aljazeera.com/news"
+    },
+    {
+      "id": 5,
+      "source": "bbc",
+      "title": "Tech giants announce collaboration on AI safety standards",
+      "description": "Leading technology companies form consortium to establish ethical guidelines for artificial intelligence development and deployment.",
+      "time": "6 hours ago",
+      "link": "https://www.bbc.com/news/technology"
+    },
+    {
+      "id": 6,
+      "source": "reuters",
+      "title": "Central banks coordinate response to currency volatility",
+      "description": "Major central banks announce joint measures to stabilize global currency markets amid increasing volatility.",
+      "time": "7 hours ago",
+      "link": "https://www.reuters.com/business/finance"
+    }
+  ]
+}

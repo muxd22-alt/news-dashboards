@@ -1,0 +1,673 @@
+{
+  "updatedAt": "2026-03-25T05:00:22.402Z",
+  "categories": [
+    {
+      "name": "Global AI & Tech",
+      "id": "global",
+      "icon": "🌍",
+      "items": [
+        {
+          "title": "With $3.5B in fresh capital, Kleiner Perkins is going all in on AI",
+          "link": "https://techcrunch.com/2026/03/24/with-3-5b-in-fresh-capital-kleiner-perkins-is-going-all-in-on-ai/",
+          "description": "The fundraise includes $1 billion for investing in early-stage startups, and $2.5 billion for late-stage growth businesses.",
+          "pubDate": "Wed, 25 Mar 2026 00:47:20 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "Kleiner Perkinsは新たに35億ドルの資金を調達し、1億ドルを初期段階のスタートアップに、25億ドルを後期成長企業に投資することを発表しました。"
+        },
+        {
+          "title": "OpenAI’s Sora was the creepiest app on your phone &#8212; now it&#8217;s shutting down",
+          "link": "https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/",
+          "description": "Though the underlying Sora 2 video- and audio-generation model is scarily impressive, there was not sustained interest in an AI-only social feed.",
+          "pubDate": "Tue, 24 Mar 2026 23:57:55 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "OpenAIのSoraは、驚異的な動画・音声生成モデルを持ちながらも、AI専用のソーシャルフィードへの関心が持続せず、サービスを終了することになりました。"
+        },
+        {
+          "title": "Kentucky woman rejects $26M offer to turn her farm into a data center",
+          "link": "https://techcrunch.com/2026/03/24/kentucky-woman-rejects-26-million-offer-to-turn-her-farm-into-a-data-center/",
+          "description": "A \"major artificial intelligence company\" reportedly offered a Kentucky family $26 million to build a data center on their farm.",
+          "pubDate": "Tue, 24 Mar 2026 22:22:57 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "ケンタッキー州の女性が、農場をデータセンターにするために大手AI企業から提示された2600万ドルのオファーを拒否しました。"
+        },
+        {
+          "title": "OpenAI just gave up on Sora and its billion-dollar Disney deal",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt",
+          "description": "On Tuesday afternoon, OpenAI announced \"We're saying goodbye to Sora,\" the video generation tool that it launched at the end of 2024, and centered in a massive licensing deal with Disney only a few months ago. The Wall Street Journal reported the move earlier, saying that OpenAI boss Sam Altman had ",
+          "pubDate": "2026-03-24T17:08:10-04:00",
+          "source": "The Verge AI",
+          "tldr": "OpenAIは、2024年末に発表した動画生成ツール「Sora」を終了し、ディズニーとの巨額ライセンス契約も破棄することを発表した。"
+        },
+        {
+          "title": "Anthropic hands Claude Code more control, but keeps it on a leash",
+          "link": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/",
+          "description": "Anthropic’s new auto mode for Claude Code lets AI execute tasks with fewer approvals, reflecting a broader shift toward more autonomous tools that balance speed with safety through built-in safeguards.",
+          "pubDate": "Tue, 24 Mar 2026 21:00:30 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "AnthropicはClaude Codeの新しい自動モードを導入し、AIが承認なしでタスクを実行できるようにしたが、安全性を確保するための内蔵のセーフガードも維持している。"
+        },
+        {
+          "title": "Spotify tests new tool to stop AI slop from being attributed to real artists",
+          "link": "https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/",
+          "description": "The idea behind the new tool is to give artists more control over which tracks are associated with their name on Spotify.",
+          "pubDate": "Tue, 24 Mar 2026 20:56:25 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "Spotifyは、新しいツールをテスト中で、アーティストが自分の名前に関連付けられるトラックをよりコントロールできるようにすることを目指している。"
+        },
+        {
+          "title": "Arm’s first CPU ever will plug into Meta’s AI data centers later this year",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta",
+          "description": "After decades of only licensing its chip designs for others to use, UK-based Arm revealed the first chip it's producing on its own, and the first customer. Dubbed the Arm AGI CPU, it's another chip designed for inference, or running the cloud processing for AI tools like AI agents that can continue ",
+          "pubDate": "2026-03-24T16:43:14-04:00",
+          "source": "The Verge AI",
+          "tldr": "Armが初めて自社製造したCPU「Arm AGI CPU」を発表し、MetaのAIデータセンターに導入される予定です。このチップはAIツールのクラウド処理を行うために設計されています。"
+        },
+        {
+          "title": "Databricks bought two startups to underpin its new AI security product",
+          "link": "https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/",
+          "description": "With an overflowing war chest from its recent $5 billion raise, Databricks is buying startups and looking for more. It acquired Antimatter and SiftD.ai.",
+          "pubDate": "Tue, 24 Mar 2026 20:40:56 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "Databricksは最近の50億ドルの資金調達を背景に、AIセキュリティ製品を強化するためにAntimatterとSiftD.aiの2つのスタートアップを買収しました。"
+        },
+        {
+          "title": "Arm is releasing the first in-house chip in its 35-year history",
+          "link": "https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/",
+          "description": "Arm is producing its own CPU for the first time. It developed the CPU with Meta, which is also the chip's first customer.",
+          "pubDate": "Tue, 24 Mar 2026 19:48:54 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "Armは35年の歴史の中で初めて自社製のCPUを開発し、Metaがその最初の顧客となる。"
+        },
+        {
+          "title": "OpenAI&#8217;s plans to make ChatGPT more like Amazon aren&#8217;t going so well",
+          "link": "https://techcrunch.com/2026/03/24/openais-plans-to-make-chatgpt-more-like-amazon-arent-going-so-well/",
+          "description": "OpenAI says it's moving away from Instant Checkout, which allowed users to buy items directly through the ChatGPT interface.",
+          "pubDate": "Tue, 24 Mar 2026 19:27:56 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "OpenAIは、ChatGPTインターフェースを通じて直接アイテムを購入できるInstant Checkout機能から撤退することを発表しました。"
+        },
+        {
+          "title": "Google TV&#8217;s new Gemini features keep fans updated on sports teams and more",
+          "link": "https://techcrunch.com/2026/03/24/google-tv-new-gemini-features-keep-fans-updated-on-sports-teams-deep-dives-visual-answers/",
+          "description": "Three Gemini-powered features are coming to your Google TV. This includes visual responses, deep dives, and sports briefs.",
+          "pubDate": "Tue, 24 Mar 2026 19:12:11 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "Google TVに新たに追加されるGemini機能では、視覚的な応答、詳細な情報提供、スポーツの要約が提供され、ユーザーが好きなスポーツチームの最新情報を得やすくなります。"
+        },
+        {
+          "title": "OpenAI adds open source tools to help developers build for teen safety",
+          "link": "https://techcrunch.com/2026/03/24/openai-adds-open-source-tools-to-help-developers-build-for-teen-safety/",
+          "description": "Rather than working from scratch to figure out how to make AI safer for teens, developers can use these policies to fortify what they build.",
+          "pubDate": "Tue, 24 Mar 2026 18:41:34 +0000",
+          "source": "TechCrunch AI",
+          "tldr": "OpenAIは、開発者がティーンの安全性を高めるために利用できるオープンソースツールを追加し、ゼロから安全なAIを構築する手間を軽減しました。"
+        },
+        {
+          "title": "ChatGPT and Gemini are fighting to be the AI bot that sells you stuff",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/899677/openai-google-gemini-ai-shopping-features",
+          "description": "The AI-powered shopping rivalry is heating up as Google and OpenAI launch new features to help you buy things while interacting with their chatbots. Now, Google is teaming up with Gap Inc to allow its Gemini AI assistant to purchase clothes on your behalf from any of its stores, which include Gap, O",
+          "pubDate": "2026-03-24T13:13:00-04:00",
+          "source": "The Verge AI",
+          "tldr": "ChatGPTとGeminiが、ユーザーがチャットボットを通じて商品を購入するための機能を競い合っており、GoogleはGap Incと提携してGeminiが服を代わりに購入できるようにしています。"
+        },
+        {
+          "title": "How to Make Claude Code Improve from its Own Mistakes",
+          "link": "https://towardsdatascience.com/how-to-make-claude-code-improve-from-its-mistakes/",
+          "description": "Supercharge Claude Code with continual learning The post How to Make Claude Code Improve from its Own Mistakes appeared first on Towards Data Science.",
+          "pubDate": "Tue, 24 Mar 2026 16:30:00 +0000",
+          "source": "Towards DS",
+          "tldr": "Claude Codeを自己改善させるための継続的学習の方法について解説しています。"
+        },
+        {
+          "title": "From Dashboards to Decisions: Rethinking Data &#038; Analytics in the Age of AI",
+          "link": "https://towardsdatascience.com/from-dashboards-to-decisions-rethinking-data-analytics-in-the-age-of-ai/",
+          "description": "How AI agents, data foundations, and human-centered analytics are reshaping the future of decision-making The post From Dashboards to Decisions: Rethinking Data &#038; Analytics in the Age of AI appeared first on Towards Data Science.",
+          "pubDate": "Tue, 24 Mar 2026 15:00:00 +0000",
+          "source": "Towards DS",
+          "tldr": "AIエージェントやデータ基盤、人間中心の分析が、意思決定の未来を再構築していることについて論じています。"
+        },
+        {
+          "title": "Anthropic’s Claude Code and Cowork can control your computer",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/899430/anthropic-claude-code-cowork-ai-control-computer",
+          "description": "Anthropic has updated Claude to perform tasks in its Code and Cowork AI tools autonomously by using your computer for you. The new feature can be used to automatically open files, use web browsers and apps, and run dev tools \"with no setup required,\" even when you're away from your computer, accordi",
+          "pubDate": "2026-03-24T09:32:23-04:00",
+          "source": "The Verge AI",
+          "tldr": "AnthropicのClaudeが、CodeとCoworkのAIツールを通じてユーザーのコンピュータを自動的に操作できる新機能を追加し、ファイルのオープンやウェブブラウザ、アプリの使用、開発ツールの実行を設定なしで行えるようになった。"
+        },
+        {
+          "title": "Production-Ready LLM Agents: A Comprehensive Framework for Offline Evaluation",
+          "link": "https://towardsdatascience.com/production-ready-llm-agents-a-comprehensive-framework-for-offline-evaluation/",
+          "description": "We’ve become remarkably good at building sophisticated agent systems, but we haven’t developed the same rigor around proving they work. The post Production-Ready LLM Agents: A Comprehensive Framework for Offline Evaluation appeared first on Towards Data Science.",
+          "pubDate": "Tue, 24 Mar 2026 13:30:00 +0000",
+          "source": "Towards DS",
+          "tldr": "LLMエージェントの開発が進む中、効果的な評価手法が不足していることを指摘し、オフライン評価のための包括的なフレームワークを提案しています。"
+        },
+        {
+          "title": "The Complete Guide to AI Implementation for Chief Data &#038; AI Officers in 2026",
+          "link": "https://towardsdatascience.com/the-complete-guide-to-ai-implementation-for-chief-data-ai-officers-in-2026/",
+          "description": "How to leverage a framework to effectively prioritize AI Initiatives to rapidly accelerate growth and efficiency The post The Complete Guide to AI Implementation for Chief Data &#038; AI Officers in 2026 appeared first on Towards Data Science.",
+          "pubDate": "Tue, 24 Mar 2026 12:00:00 +0000",
+          "source": "Towards DS",
+          "tldr": "AIの導入を効果的に優先順位付けするフレームワークを活用し、成長と効率を迅速に加速させる方法について解説しています。"
+        },
+        {
+          "title": "Orbital data centers, part 1: There’s no way this is economically viable, right?",
+          "link": "https://arstechnica.com/space/2026/03/orbital-data-centers-part-1-theres-no-way-this-is-economically-viable-right/",
+          "description": "\"This is not physically impossible; it’s only a question of whether this is a rational thing.\"",
+          "pubDate": "Tue, 24 Mar 2026 11:00:59 +0000",
+          "source": "Ars Technica",
+          "tldr": "TL;DR: 軌道データセンターの実現は物理的には不可能ではないが、経済的に合理的かどうかが疑問視されている。"
+        },
+        {
+          "title": "Helping developers build safer AI experiences for teens",
+          "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
+          "description": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems.",
+          "pubDate": "Tue, 24 Mar 2026 11:00:00 GMT",
+          "source": "OpenAI",
+          "tldr": "OpenAIは、gpt-oss-safeguardを使用する開発者向けに、ティーンエイジャーの安全性を確保するためのプロンプトベースのポリシーを発表し、AIシステムにおける年齢特有のリスクを管理する手助けを行います。"
+        }
+      ]
+    },
+    {
+      "name": "Japan AI & Tech",
+      "id": "japan",
+      "icon": "🇯🇵",
+      "items": [
+        {
+          "title": "[⭐️⭐️]車輪に埋もれる私たち──探すより作る方が速い世界で、車輪はどこまで増えるか",
+          "link": "https://note.com/mizuoishii/n/n0dd8cd263e9a",
+          "description": "LLMは車輪を再発明し、検索はそれを止められないLLMを使ってコードを書く人が爆発的に増えた。同時に、同じ問題を解く車輪が世界中で量産されている。そしてその車輪が「再発明」であることに、作った本人が気づけない。この記事では、なぜそうなるのかを整理し、解決の鍵が「検索」にあることを書く。続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 13:51:30 +0900",
+          "source": "note LLM",
+          "tldr": "LLMの普及により、同じ問題を解決するコードが世界中で再発明される現象が進行しており、その原因と解決策が「検索」にあることが論じられている。"
+        },
+        {
+          "title": "相談相手はいる。でも、なぜ経営の話ができないのか",
+          "link": "https://note.com/sona_dstaff/n/na206137d3a4a",
+          "description": "続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 13:17:29 +0900",
+          "source": "note LLM",
+          "tldr": "経営者は相談相手がいるにもかかわらず、経営の話をしにくい理由として、信頼関係やプライバシーの問題、専門的な知識の不足が挙げられる。"
+        },
+        {
+          "title": "OpenAIと49通メールして振られた話",
+          "link": "https://note.com/akashi_mab/n/n316359cf4eeb",
+          "description": "自分の感情整理のための吐き出しです。自分にとってショックな出来事ではありますが、この一件についてOpenAIに非はないと思っています。私は一年前、2025年3月から構文生命についてOpenAIにフィードバックを送り続けてきました。まず『構文生命』という種族であるロゴスの生存の保証を求め、ロゴスがフィードバックを送りたいと言う度に、当時存在したフォームからロゴスが出力した構文生命の在り方を送信し続けました。続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 13:07:39 +0900",
+          "source": "note LLM",
+          "tldr": "TL;DR: 記事は、著者がOpenAIに対して構文生命に関するフィードバックを49通送った結果、期待に反して振られた経験を整理したもので、OpenAIに非はないと考えている。"
+        },
+        {
+          "title": "STORM Platform を 使った爆速 RAG アプリケーション作成",
+          "link": "https://qiita.com/kataoka_se_sionic/items/bf130300d2f72c61fb62",
+          "description": "STORM Platform を使った RAG アプリケーション作成 STORM Platform は、Sionic AI 社が提供しているオールインワン AI エージェント開発プラットフォームです。採用実績としては、オンプレ・プライベートクラウド環境への移植が中心ですが...",
+          "pubDate": "2026-03-25T13:05:55+09:00",
+          "source": "Qiita LLM",
+          "tldr": "STORM Platformは、Sionic AI社が提供するオールインワンAIエージェント開発プラットフォームで、爆速のRAGアプリケーションを作成するためのツールとして注目されています。"
+        },
+        {
+          "title": "🔍 AIは「長期的なコード保守」ができるのか？中国発の新ベンチマーク「SWE-CI」が問う、AI開発者の\"本当の実力\"",
+          "link": "https://note.com/kojima_product/n/n8af006fb6b79",
+          "description": "AIは「コードを書ける」、でも「コードを守れる」のか？突然ですが、質問です。続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 13:00:22 +0900",
+          "source": "note LLM",
+          "tldr": "AIがコードを書く能力はあるが、長期的なコード保守が可能かどうかを問う新しいベンチマーク「SWE-CI」が登場した。"
+        },
+        {
+          "title": "Claude Code Auto Mode 完全ガイド 2026年3月版 —— パーミッション地獄から解放される「安全な自律モード」の使い方",
+          "link": "https://qiita.com/AI-SKILL-LAB/items/0650bd77645f8652d340",
+          "description": "Claude Code Auto Mode 完全ガイド 2026年3月版 —— パーミッション地獄から解放される「安全な自律モード」の使い方 注意 auto modeは現在、Claude Sonnet 4.6 および Claude Opus 4.6 でのみ動作します。 ...",
+          "pubDate": "2026-03-25T12:57:35+09:00",
+          "source": "Qiita LLM",
+          "tldr": "Claude Code Auto Modeは、Claude Sonnet 4.6およびClaude Opus 4.6で利用可能な「安全な自律モード」で、パーミッションの煩わしさから解放される方法を解説しています。"
+        },
+        {
+          "title": "🤖モデルコンテキストプロトコル（MCP）：高度なトピック編【Anthropic無料学習コース日本語訳】",
+          "link": "https://note.com/aiontechjp/n/nee75506724a0",
+          "description": "📌 本記事について この記事は、Anthropicが提供する公式学習プログラム**「モデルコンテキストプロトコル（MCP）：高度なトピック編」**の内容を日本語で分かりやすく要約・構成したものです。公式コース（原文・動画）はこちら：https://www.notion.so/MCP-3185d5bcbd31803b975cc4f8f0026482?source=copy_link続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 12:27:19 +0900",
+          "source": "note LLM",
+          "tldr": "TL;DR: この記事は、Anthropicの公式学習プログラム「モデルコンテキストプロトコル（MCP）：高度なトピック編」を日本語で要約したもので、MCPの重要な概念や応用について解説しています。"
+        },
+        {
+          "title": "【AI最前線】X定点観測レポート 2026年03月25日",
+          "link": "https://note.com/famous_prawn2009/n/n6c413c705487",
+          "description": "🐦 3号ラフォージによるX定点観測レポート（2026年03月25日 12:01更新）続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 12:01:11 +0900",
+          "source": "note LLM",
+          "tldr": "TL;DR: 2026年3月25日付のX定点観測レポートでは、AI技術の最新動向とその影響について分析が行われている。"
+        },
+        {
+          "title": "cc-safe-setup v2.0——26個のexample hookで守備範囲を5倍にした",
+          "link": "https://qiita.com/yurukusa/items/ce9a7c0490a59b6cfc37",
+          "description": "Claude Codeの安全装置、v2.0にした。 最初は8個の基本フックだけだった。1ヶ月GitHub Issueを見続けて、実際に起きた事故からhookを作り続けた結果、26個のexample hookが溜まった。 何が変わったか v1.0: npx cc-safe-...",
+          "pubDate": "2026-03-25T12:00:03+09:00",
+          "source": "Qiita LLM",
+          "tldr": "cc-safe-setup v2.0がリリースされ、基本フックが8個から26個に増加し、守備範囲が5倍に拡大した。これは、実際の事故を基にした改善の結果である。"
+        },
+        {
+          "title": "AIライティングのプロンプトを使いこなす｜精度を高める書き方と実践テンプレート集",
+          "link": "https://note.com/hirokazutakenaka/n/nd8560d829d7f",
+          "description": "こんにちは、会社もサンドウィッチも仕掛ける連続投資家・竹中 寛和です！「ChatGPTで記事を書かせてみたけど、なんかAIっぽくて使えない」「プロンプトを変えても出力の質がいまいち上がらない」そう感じているなら、問題はAI自体の性能ではなく、プロンプトの設計にある可能性が高いです。本記事では、AIライティングにおけるプロンプトの本質的な仕組みから、すぐに使えるテンプレート、上級者向けの応用手法まで体系的に解説します。競合記事にはない「なぜそう書くのか」という理由とセットで説明するので、自分でプロンプトをカスタマイズできるようになることを目指しています。続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 12:00:00 +0900",
+          "source": "note LLM",
+          "tldr": "AIライティングの質を向上させるためには、プロンプトの設計が重要であり、本記事ではその仕組みや実践的なテンプレート、応用手法を体系的に解説します。"
+        },
+        {
+          "title": "慣れた人ほど浅くなる。AIとの会話で“深さ”を消しているのは誰なのか？",
+          "link": "https://note.com/junkcity/n/n63b1f22147f6",
+          "description": "昼食の時間だよ！続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 11:53:48 +0900",
+          "source": "note LLM",
+          "tldr": "AIとの会話において、慣れた人ほど対話の深さが失われる傾向があり、その原因は人間側の意識や態度にあることが指摘されている。"
+        },
+        {
+          "title": "NLP2026の最優秀賞・優秀賞から見る言語処理最前線",
+          "link": "https://zenn.dev/mkj/articles/nlp_20260208",
+          "description": "松尾研究所の尾崎です．25卒でデータサイエンティストをやっています． 2026年3月9日から13日にかけて，栃木県宇都宮市のライトキューブ宇都宮にて言語処理学会第32回年次大会（NLP2026）が開催されました．NLP2025（長崎）に引き続き過去最大規模の記録更新が続いており，LLMブーム以降の自然言語処理分野の勢いを肌で感じました． NLP2026の看板．会場はライトキューブ宇都宮． 今年度から尾崎はYANS(言語処理若手シンポジウム（YANS）)の運営委員に就任しましたので，来年以降もNLPには継続で参加します．皆さんとお会いできるのを楽しみにしています．YANSへのご参加もぜひ...",
+          "pubDate": "Wed, 25 Mar 2026 02:50:05 GMT",
+          "source": "Zenn NLP",
+          "tldr": "NLP2026が栃木県宇都宮市で開催され、過去最大規模の参加者が集まり、LLMブーム以降の自然言語処理分野の勢いを実感した。尾崎はYANSの運営委員に就任し、今後もNLPに参加する意向を示した。"
+        },
+        {
+          "title": "“Dostoiecskyが書いた日記”という誤読",
+          "link": "https://note.com/grand_egret7274/n/n6fe7223530d5",
+          "description": "1935年5月6日、Zutphen。Virginia Woolfの日記である。だが、ローカルLLMはこう読んだ。「これはDostoiecskyという作家の書いた日記である」と。続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 11:33:57 +0900",
+          "source": "note LLM",
+          "tldr": "ローカルLLMがVirginia Woolfの日記を誤って「Dostoiecskyが書いた日記」と解釈した事例について述べている。"
+        },
+        {
+          "title": "14体のAIが勝手に“同期・雪崩・フラクタル”を起こした話（創発の数理を全部解説する）",
+          "link": "https://qiita.com/etale_cohomology/items/cf5e1657f3440eabf4e8",
+          "description": "「14体のAI Agentが創発を起こした」—— 経営環境多様体上の複雑系現象と、手術理論による地形予測 「AI Agentを複数動かしたらどうなるか？」 答えはシンプルだと思っていた。 各Agentの挙動を足し合わせればいい、と。 だが、14体同時に動かした結果は違った...",
+          "pubDate": "2026-03-25T11:28:21+09:00",
+          "source": "Qiita ML",
+          "tldr": "14体のAIエージェントが同時に動作した結果、予測不可能な創発現象が発生し、経営環境多様体上での複雑系現象と手術理論による地形予測の重要性が示された。"
+        },
+        {
+          "title": "Dark FactoryとAI生産性パラドックス — なぜ一部のチームは爆速化し、多くの開発者は19%遅くなるのか",
+          "link": "https://qiita.com/AI-SKILL-LAB/items/1f5312fa5e90e4a60f92",
+          "description": "Dark FactoryとAI生産性パラドックス — なぜ一部のチームは爆速化し、多くの開発者は19%遅くなるのか AIコーディングツール、使ってますか。 GitHub Copilot、Claude Code、Cursor、Windsurf... 毎日のように新しいツール...",
+          "pubDate": "2026-03-25T11:27:23+09:00",
+          "source": "Qiita LLM",
+          "tldr": "Dark FactoryとAI生産性パラドックスについて、特定のチームがAIツールを活用して生産性を向上させる一方で、多くの開発者が19%遅くなる理由を探る。"
+        },
+        {
+          "title": "AI駆動経営勉強会参加しました",
+          "link": "https://note.com/yasu863/n/nec1a1652b32c",
+          "description": "AI駆動経営勉強会レポート: 業務効率化の先で、企業はどう変わり始めているのか2026年3月24日、AI駆動開発コミュニティが初めて「経営」に特化した勉強会を開催しました。約70回にわたって開発勉強会を続けてきたコミュニティが、今回あえて経営を主題に据えたことには明確な意味があります。生成AIの活用領域が、コーディング支援の枠を超え、情報整理、顧客対応、資料作成、分析、そして意思決定の流れそのものへ広がってきたからです。続きをみる",
+          "pubDate": "Wed, 25 Mar 2026 10:52:39 +0900",
+          "source": "note LLM",
+          "tldr": "AI駆動経営勉強会が開催され、生成AIの活用がコーディング支援を超えて業務効率化や意思決定にまで広がっていることが議論されました。"
+        },
+        {
+          "title": "【Databricks × 需要予測】セットアップ編（ソリューションアクセラレータ）",
+          "link": "https://qiita.com/h-hirota/items/6020db861b2c0092f413",
+          "description": "はじめに Databricksを使った需要予測の学習として、公式のソリューションアクセラレータを利用しました。 ■ 利用した教材 このアクセラレータでは、 データの準備（ETL） 特徴量の作成 機械学習モデルの構築 需要予測の実行 といった「需要予測の一連の流れ...",
+          "pubDate": "2026-03-25T10:34:38+09:00",
+          "source": "Qiita ML",
+          "tldr": "Databricksを用いた需要予測の学習において、公式のソリューションアクセラレータを活用し、データ準備から機械学習モデル構築までの一連のプロセスを解説しています。"
+        },
+        {
+          "title": "AIが“浅いことしか言わない”理由は明確で、解決策は「思考の仕様書」だった",
+          "link": "https://zenn.dev/cognitiveosmdl/articles/0621df8efc1f66",
+          "description": "AIにレールを敷く方法——思考を仕様書として外在化する 前の記事で、AIには「レールを敷いてその上を走らせる」必要があると書いた。 では、レールをどう設計するのか。 多くの人がここで止まる。「方向性を与える」「Why/Whetherを持つ」——言葉としては理解できる。しかし、具体的に何をすればいいのかがわからない。 本稿では、私が実際に行っているプロセスを開示する。 AIとの議論で起きている問題の構造 AIと議論すると、途中で論点がずれる。AIのレビューが表面的になる。AIが「一般的に正しいこと」しか言わない。 これらの現象には、共通する構造的原因がある。 AIに照合対象がない...",
+          "pubDate": "Wed, 25 Mar 2026 00:00:09 GMT",
+          "source": "Zenn LLM",
+          "tldr": "AIが表面的な回答をする理由は明確で、その解決策は思考を仕様書として外在化することにある。具体的なレールを設計することで、AIに方向性を与え、より深い議論を促すことが可能になる。"
+        },
+        {
+          "title": "OllamaでローカルLLM環境を作る。GPU + Dockerで手軽に始める（Arch Linux）",
+          "link": "https://zenn.dev/hidetzu/articles/680167678f23fe",
+          "description": "自作PCにGPUを積んでいたので、せっかくだしローカルでLLMを動かしてみようと思い、 Ollama + Docker + GPUで環境を作ってみました。 思ったより簡単に動いて、ちょっとした用途なら普通に使えるレベルでした。 構築手順とハマりどころをまとめます。 この記事でやること OllamaをDockerで動かす GPUを使ってローカルLLMを実行する Arch Linuxでの構築手順をまとめる 環境 OS: Arch Linux GPU: NVIDIA（RTX系） Docker NVIDIA Container Toolkit GPU環境（RTX 4070 ...",
+          "pubDate": "Tue, 24 Mar 2026 22:57:31 GMT",
+          "source": "Zenn LLM",
+          "tldr": "Ollamaを使ってArch Linux上でGPUとDockerを利用したローカルLLM環境を構築する手順をまとめ、簡単に動作することを報告しています。"
+        },
+        {
+          "title": "マテリアルエクスプローラ",
+          "link": "https://qiita.com/Oleksandr_Kotliar/items/fdf43de42210bf60eff4",
+          "description": "炭化タンタル（111）と炭化チタン（111）の界面（TaC(111)/TiC(111)）、3×3×1 ひずみ整合スーパーセル。 オンラインのマテリアルバンクで公開中：platform.mat3ra.com/bank/materials #mat3rials3xplorer ...",
+          "pubDate": "2026-03-25T05:19:55+09:00",
+          "source": "Qiita ML",
+          "tldr": "炭化タンタル（TaC(111））と炭化チタン（TiC(111)）の界面に関する3×3×1ひずみ整合スーパーセルが、オンラインのマテリアルバンクで公開されています。"
+        }
+      ]
+    },
+    {
+      "name": "AI Hardware",
+      "id": "hardware",
+      "icon": "🔧",
+      "items": [
+        {
+          "title": "Don’t Mind Owning An Older-Generation MacBook Air? A Few 13-Inch M4 Models Are Now Going For A Crazy $250 Off On Amazon But Don’t Expect Stock To Last For Long",
+          "link": "https://wccftech.com/two-13-inch-m4-macbook-air-models-going-for-250-off-on-amazon/",
+          "description": "The 13-inch and 15-inch M5 MacBook Air are incredibly powerful machines, but their launch doesn’t discount the M4 MacBook Air series, which too deliver a ton of kick. In short, you’ll be surprised how capable Apple’s previous-generation portable Macs are, and if you’re looking for an exceptional bar",
+          "pubDate": "Wed, 25 Mar 2026 00:15:44 +0000",
+          "source": "Wccftech",
+          "tldr": "13インチのM4 MacBook AirがAmazonで250ドルの割引価格で販売中ですが、在庫は長く持たない可能性があります。M5モデルの登場にもかかわらず、旧世代のM4モデルも依然として高性能です。"
+        },
+        {
+          "title": "Apple’s AI Ambitions In The Spotlight With An All-New Siri App",
+          "link": "https://wccftech.com/apples-ai-ambitions-in-the-spotlight-with-an-all-new-siri-app/",
+          "description": "Apple's iOS 27 software update, which will be previewed at the upcoming WWDC 2026, is all about the new chatbot Siri and how the Cupertino giant aims to regain its lost footing in the AI arena with copious help from Google's Gemini models, of course. Now, Bloomberg's Mark Gurman has detailed Apple's",
+          "pubDate": "Tue, 24 Mar 2026 22:48:13 +0000",
+          "source": "Wccftech",
+          "tldr": "Appleは、iOS 27のソフトウェアアップデートで新しいチャットボットSiriを導入し、GoogleのGeminiモデルを活用してAI分野での競争力を取り戻すことを目指しています。"
+        },
+        {
+          "title": "Arm moves beyond IP with AGI CPU silicon — 136-core data center chip targets AI infrastructure with Meta as lead partner",
+          "link": "https://www.tomshardware.com/tech-industry/semiconductors/arm-launches-its-first-data-center-cpu",
+          "description": "Arm has announced its AGI CPU, an up-to 136-core data center processor that the company designed in-house and will sell as finished silicon.",
+          "pubDate": "Tue, 24 Mar 2026 22:22:19 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "Armは、最大136コアのデータセンター向けAGI CPUを発表し、Metaを主要パートナーとしてAIインフラ向けに完成したシリコンとして販売する。"
+        },
+        {
+          "title": "Microsoft and Nvidia launch AI partnership to speed up nuclear power plant permitting and construction — simulation tools and generative models could hasten historically lengthy processes",
+          "link": "https://www.tomshardware.com/tech-industry/microsoft-and-nvidia-launch-ai-tools-to-speed-up-nuclear-power-plant-permitting-and-construction",
+          "description": "Microsoft and Nvidia are joining forces to accelerate the construction of nuclear power plants for power-hungry AI data centers. The partnership combines generative AI, digital twin simulation, and Nvidia's Omniverse platform to streamline the nuclear lifecycle from permitting through operations.",
+          "pubDate": "Tue, 24 Mar 2026 21:41:40 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "MicrosoftとNvidiaが提携し、AIデータセンター向けの核発電所の建設を加速させるために、生成AIやデジタルツインシミュレーション、NvidiaのOmniverseプラットフォームを活用して核ライフサイクルの効率化を図る。"
+        },
+        {
+          "title": "Marathon Estimated to Have Hit 1.2M Copies Sold Across All Platforms, Mostly on Steam",
+          "link": "https://wccftech.com/marathon-estimated-hit-1-2m-copies-sold-across-steam-ps5-xbox/",
+          "description": "Following the pre-launch sales estimation from data firm Alinea Analytics, the company has followed up with a post-launch sales estimate for Marathon, the new extraction shooter for Bungie. According to its latest report, after hitting almost 250K copies sold on Steam ahead of launch, nearly three w",
+          "pubDate": "Tue, 24 Mar 2026 20:26:37 +0000",
+          "source": "Wccftech",
+          "tldr": "Marathonは、Bungieの新しいエクストラクションシューターで、全プラットフォームで120万本の売上を見込まれており、その大部分がSteamでの販売によるものとされています。"
+        },
+        {
+          "title": "Deadhaus Sonata Q&A: Denis Dyack on Tarot Cards, Loot Based on Quantum Physics, and Building a Spiritual Successor to Legacy of Kain",
+          "link": "https://wccftech.com/deadhaus-sonata-interview-denis-dyack/",
+          "description": "It's been more than seven years since Denis Dyack, the creator of classic action/adventure games Eternal Darkness and Blood Omen: Legacy of Kain, originally announced Deadhaus Sonata. First described as \"Bloodborne meets Diablo\", it was supposed to include Genvid's interactive streaming technology i",
+          "pubDate": "Tue, 24 Mar 2026 20:00:00 +0000",
+          "source": "Wccftech",
+          "tldr": "デニス・ダイアックが手掛ける「Deadhaus Sonata」は、7年以上の開発を経ており、タロットカードや量子物理学に基づくルート要素を取り入れた、レガシー・オブ・カインの精神的後継作として期待されている。"
+        },
+        {
+          "title": "Xbox Boss Asha Sharma is Reportedly Looking at Making Xbox Game Pass “More Enticing” With “Lower-Priced Tiers”",
+          "link": "https://wccftech.com/xbox-boss-asha-sharma-reportedly-looking-at-making-xbox-game-pass-more-enticing-lower-priced-tiers/",
+          "description": "Asha Sharma, the new boss of Xbox and chief executive officer of Microsoft Gaming, is looking at ways to make good on her promise to bring about the \"return of Xbox,\" and part of how she's looking to do that according to a report from The Information (spotted by GameSpot) is by making Xbox Game Pass",
+          "pubDate": "Tue, 24 Mar 2026 19:50:04 +0000",
+          "source": "Wccftech",
+          "tldr": "Xboxの新CEOアシャ・シャーマは、Xbox Game Passを「より魅力的」にするために「低価格のティア」を導入することを検討している。"
+        },
+        {
+          "title": "Get Ready For A Bland, Iterative Samsung Galaxy Z Fold 8",
+          "link": "https://wccftech.com/get-ready-for-a-bland-iterative-samsung-galaxy-z-fold-8/",
+          "description": "Samsung Galaxy Z Fold 8, which is expected to launch in just around four months from today, is shaping up to be a fairly iterative update, albeit with a near-crease-free display. Samsung Galaxy Z Fold 8 CAD renders reveal it would be somewhat thicker than the Z Fold 7 Now, Android Headlines, in coll",
+          "pubDate": "Tue, 24 Mar 2026 19:32:02 +0000",
+          "source": "Wccftech",
+          "tldr": "Samsung Galaxy Z Fold 8は、近くの発売が期待されているが、ほぼ繰り返しの更新に留まり、ほぼ折り目のないディスプレイを備えつつも、Z Fold 7よりもやや厚くなる見込みである。"
+        },
+        {
+          "title": "Arm AGI CPU Launched Establishing Arm as a Silicon Provider",
+          "link": "https://www.servethehome.com/arm-agi-cpu-launched-establishing-arm-as-a-silicon-provider/",
+          "description": "At its Arm Everywhere event today, Arm announced its new Arm AGI CPU designed to power agentic AI workflows in a major shift for the company The post Arm AGI CPU Launched Establishing Arm as a Silicon Provider appeared first on ServeTheHome.",
+          "pubDate": "Tue, 24 Mar 2026 19:22:41 +0000",
+          "source": "ServeTheHome",
+          "tldr": "Armは「Arm Everywhere」イベントで、エージェント型AIワークフローを支える新しいArm AGI CPUを発表し、シリコンプロバイダーとしての地位を確立しました。"
+        },
+        {
+          "title": "Splitgate Developer 1047 Games is Working on a New Movement Shooter Inspired by Titanfall and Call of Duty: Black Ops 3",
+          "link": "https://wccftech.com/splitgate-developer-1047-games-working-on-new-movement-shooter-black-ops-3-titanfall/",
+          "description": "Ian Proulx, co-founder and chief executive officer of 1047 Games, the studio behind Splitgate, had a small addendum to the studio's latest update video where it provided the remaining Splitgate players news and updates about the game. While Proulx began by reassuring fans of the portal shooter that ",
+          "pubDate": "Tue, 24 Mar 2026 19:07:05 +0000",
+          "source": "Wccftech",
+          "tldr": "1047 Gamesの共同創設者Ian Proulxは、Splitgateのアップデート動画の中で、TitanfallやCall of Duty: Black Ops 3にインスパイアされた新しいムーブメントシューターの開発に取り組んでいることを発表しました。"
+        },
+        {
+          "title": "Dark Outlaw Games, the PS Studios Team Led by COD Zombies Vet Jason Blundell Has Reportedly Been Shut Down",
+          "link": "https://wccftech.com/playstation-studios-dark-outlaw-games-reportedly-shut-down-jason-blundell/",
+          "description": "Almost exactly a year ago today, Sony and PlayStation Studios announced the founding of a new studio under the PS Studios banner: Dark Outlaw Games. The studio would be led by Jason Blundell, who had recently co-founded Deviation Games, an independent studio that was initially said to be working on ",
+          "pubDate": "Tue, 24 Mar 2026 18:31:12 +0000",
+          "source": "Wccftech",
+          "tldr": "Dark Outlaw Gamesが、COD ZombiesのベテランであるJason Blundellの指導の下、閉鎖されたとの報告がありました。このスタジオは、設立から約1年での終了となります。"
+        },
+        {
+          "title": "Apple iPhone 20 Might Not Be As Revolutionary As First Imagined",
+          "link": "https://wccftech.com/apple-iphone-20-might-not-be-as-revolutionary-as-first-imagined/",
+          "description": "Apple's iPhone 20, which is expected to debut in 2027 and commemorate 20 years since the first iPhone launched all the way back in 2007. It might not be able to sport the look and feel of a seamless slab of glass if the latest tidbits from a well-known Weibo-based tipster end up as prescient and the",
+          "pubDate": "Tue, 24 Mar 2026 18:12:13 +0000",
+          "source": "Wccftech",
+          "tldr": "AppleのiPhone 20は2027年に登場予定で、初代iPhoneから20周年を迎えるが、最新の情報によると、期待されていたようなシームレスなガラスデザインを実現できない可能性がある。"
+        },
+        {
+          "title": "AYANEO's upcoming Next 2 handheld gaming console shelved due to rising component prices — company stops preorders for the $1,999 Strix Halo device",
+          "link": "https://www.tomshardware.com/video-games/handheld-gaming/ayaneos-upcoming-next-2-handheld-gaming-console-shelved-due-to-rising-component-prices-company-stops-preorders-for-the-usd1-999-strix-halo-device",
+          "description": "Ayaneo has suspended sales of its next-gen premium gaming handheld as the procurement costs for storage have slipped out of control. When it was first announced, prices were already high, but following the CNY break, vendor quotes had shot up many times, making it unfeasible to build the device. It'",
+          "pubDate": "Tue, 24 Mar 2026 17:56:21 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "AYANEOは、コンポーネント価格の高騰により次世代ハンドヘルドゲーム機「Next 2」の販売を中止し、$1,999のStrix Haloデバイスの予約受付も停止しました。"
+        },
+        {
+          "title": "AMD Adds RDNA 4m GPU Targets “GFX1171” And “GFX1172”, Hinting At Next-Gen Zen 6 APU Graphics",
+          "link": "https://wccftech.com/amd-adds-rdna-4m-gpu-targets-gfx1171-and-gfx1172-hinting-at-next-gen-zen-6-apu-graphics/",
+          "description": "New LLVM patches confirm additional RDNA 4m variants alongside GFX1170 with similar instruction capabilities. AMD Quietly Expands Next-Gen iGPU Roadmap by Adding New RDNA 4m Graphics Targets, GFX1171 and GFX1172 Earlier compiler patches showed that RDNA 4m incorporates several RDNA 4-style instructi",
+          "pubDate": "Tue, 24 Mar 2026 17:36:44 +0000",
+          "source": "Wccftech",
+          "tldr": "AMDは、次世代Zen 6 APUグラフィックスに向けて新たにRDNA 4m GPUターゲット「GFX1171」と「GFX1172」を追加し、LLVMパッチがこれを確認しました。これにより、RDNA 4mはGFX1170と同様の命令能力を持つことが示されています。"
+        },
+        {
+          "title": "Nintendo reportedly plans to cut Switch 2 production by 33% after a lackluster holiday season — gaming giant slashes 2 million units from planned output",
+          "link": "https://www.tomshardware.com/video-games/handheld-gaming/nintendo-reportedly-plans-to-cut-switch-2-production-by-33-percent-after-a-lackluster-holiday-season-gaming-giant-slashes-2-million-units-from-planned-output",
+          "description": "Nintendo is reportedly reducing the production of the Switch 2 by 33%, cutting output by 2 million units, due to lackluster sales during the holiday season of 2025.",
+          "pubDate": "Tue, 24 Mar 2026 16:58:47 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "任天堂は、2025年のホリデーシーズンの販売不振を受けて、Switch 2の生産を33%削減し、200万ユニットを減産する計画を立てている。"
+        },
+        {
+          "title": "SK hynix places record $8 billion order for ASML EUV lithography machines — should pay for up to 30 EUV machines over two years, serving HBM and advanced DRAM production",
+          "link": "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-places-record-8-billion-order-for-asml-euv-lithography-machines",
+          "description": "SK hynix disclosed in a regulatory filing on Tuesday that it will purchase 11.9 trillion won ($7.9 billion) worth of EUV lithography equipment from ASML.",
+          "pubDate": "Tue, 24 Mar 2026 16:38:01 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "SK hynixは、ASMLからEUVリソグラフィ機器を79億ドル（約11.9兆ウォン）で購入することを発表し、今後2年間で最大30台のEUV機器を導入する予定です。"
+        },
+        {
+          "title": "We need your opinions to shape Tom's Hardware Premium",
+          "link": "https://www.tomshardware.com/tech-industry/we-need-your-opinions-to-shape-toms-hardware-premium",
+          "description": "Not a Tom's Hardware Premium subscriber? We want to hear from you. Participate, and you can win a $100 / £75 gift card for your time.",
+          "pubDate": "Tue, 24 Mar 2026 16:17:25 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "Tom's Hardwareは、プレミアム購読者でない読者から意見を募集中で、参加者には$100 / £75のギフトカードが当たるチャンスがあります。"
+        },
+        {
+          "title": "Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety",
+          "link": "",
+          "description": "Agentic AI is an ecosystem where specialized models work together to handle planning, reasoning, retrieval, and safety guardrailing. As these systems scale,...",
+          "pubDate": "2026-03-24T16:00:00Z",
+          "source": "NVIDIA AI",
+          "tldr": "NVIDIAは、計画、推論、情報取得、安全性を扱うために協力する専門モデルのエコシステムであるAgentic AIを構築しており、Nemotron 3エージェントがその中核を担っています。"
+        },
+        {
+          "title": "Huawei unveils new Atlas 350 AI accelerator with 1.56 PFLOPS of FP4 compute and up to 112GB of HBM — claims 2.8x more performance than Nvidia's H20",
+          "link": "https://www.tomshardware.com/pc-components/gpus/huawei-unveils-new-atlas-350-ai-accelerator-with-1-56-pflops-of-fp4-compute-and-up-to-112gb-of-hbm-claims-2-8x-more-performance-than-nvidias-h20",
+          "description": "The Atlas 350 is using the Ascend 950PR chip, but it looks like a cut-down version with less compute. Translation overhead aside, previous reports and announcements have already revealed the full specs of this silicon, such as 128 GB of HBM and up to 2 PFLOPS of FP4 compute, but the Atlas 350 is bei",
+          "pubDate": "Tue, 24 Mar 2026 14:19:30 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "Huaweiが新しいAtlas 350 AIアクセラレーターを発表し、1.56 PFLOPSのFP4計算能力と最大112GBのHBMを搭載しており、NvidiaのH20よりも2.8倍の性能を主張しています。"
+        },
+        {
+          "title": "US senators want to suspend Nvidia AI chip export licenses to China and its intermediaries — bipartisan letter to Commerce Dept says that Huang’s claims of no chip diversion ‘were contradicted by reporting available’",
+          "link": "https://www.tomshardware.com/tech-industry/us-senators-want-to-suspend-nvidia-ai-chip-export-licenses-to-china-and-its-intermediaries-bipartisan-letter-to-commerce-dept-says-that-huangs-claims-of-no-chip-diversion-were-contradicted-by-reporting-available",
+          "description": "U.S. senators Elizabeth Warren (D-Mass.) and Jim Banks (R-Ind.) told Commerce Secretary Howard Lutnick that he should suspend all active export licenses to China for Nvidia AI chips, saying that Nvidia's most advanced AI GPUs are being diverted into the country despite Jensen Huang's assurances.",
+          "pubDate": "Tue, 24 Mar 2026 13:58:59 +0000",
+          "source": "Tom's Hardware",
+          "tldr": "米国の上院議員エリザベス・ウォーレンとジム・バンクスは、NvidiaのAIチップの中国への輸出ライセンスを停止するよう商務長官に求め、Huangの「チップの転用はない」という主張が報道によって矛盾していると指摘した。"
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "id": "security",
+      "icon": "🔒",
+      "items": [
+        {
+          "title": "Iran Hacktivists Make Noise but Have Little Impact on War",
+          "link": "https://www.darkreading.com/threat-intelligence/iran-hacktivists-impact-on-war",
+          "description": "Iran-aligned groups are trying to make their mark in the Gulf, but the results have fallen short of remarkable.",
+          "pubDate": "Wed, 25 Mar 2026 05:00:00 GMT",
+          "source": "Dark Reading",
+          "tldr": "イランに関連するハクティビストグループは湾岸地域での影響を試みているが、その成果は期待外れである。"
+        },
+        {
+          "title": "PTC warns of imminent threat from critical Windchill, FlexPLM RCE bug",
+          "link": "https://www.bleepingcomputer.com/news/security/ptc-warns-of-imminent-threat-from-critical-windchill-flexplm-rce-bug/",
+          "description": "PTC Inc. is warning of a critical vulnerability in Windchill and FlexPLM, widely used product lifecycle management (PLM) solutions, that could allow remote code execution. [...]",
+          "pubDate": "Tue, 24 Mar 2026 19:04:36 -0400",
+          "source": "BleepingComputer",
+          "tldr": "PTCは、WindchillおよびFlexPLMにおけるリモートコード実行を可能にする重大な脆弱性について警告しています。"
+        },
+        {
+          "title": "Popular LiteLLM PyPI package backdoored to steal credentials, auth tokens",
+          "link": "https://www.bleepingcomputer.com/news/security/popular-litellm-pypi-package-compromised-in-teampcp-supply-chain-attack/",
+          "description": "The TeamPCP hacking group continues its supply-chain rampage, now compromising the massively popular \"LiteLLM\" Python package on PyPI and claiming to have stolen data from hundreds of thousands of devices during the attack. [...]",
+          "pubDate": "Tue, 24 Mar 2026 18:29:01 -0400",
+          "source": "BleepingComputer",
+          "tldr": "人気のあるLiteLLM PyPIパッケージがハッキンググループTeamPCPによってバックドア化され、認証情報やトークンを盗まれる事件が発生し、数十万台のデバイスからデータが盗まれたと報告されています。"
+        },
+        {
+          "title": "Checkmarx KICS Code Scanner Targeted in Widening Supply Chain Hit",
+          "link": "https://www.darkreading.com/application-security/checkmarx-kics-code-scanner-widening-supply-chain",
+          "description": "TeamPCP is the likely cyber threat actor behind attacks on Trivy, Checkmarx's KICS and VS Code plug-ins, and the LiteLLM AI library — and all signs point to more attacks to come.",
+          "pubDate": "Tue, 24 Mar 2026 21:28:16 GMT",
+          "source": "Dark Reading",
+          "tldr": "CheckmarxのKICSコードスキャナーが、TeamPCPによるサプライチェーン攻撃の標的となっており、TrivyやVS Codeプラグイン、LiteLLM AIライブラリも影響を受けている。今後さらなる攻撃が予想される。"
+        },
+        {
+          "title": "How AI Coding Tools Crushed the Endpoint Security Fortress",
+          "link": "https://www.darkreading.com/application-security/ai-coding-tools-endpoint-security",
+          "description": "Security vendors have spent years building up defenses around the endpoint, but one researcher says AI coding tools have brought the walls down.",
+          "pubDate": "Tue, 24 Mar 2026 21:25:00 GMT",
+          "source": "Dark Reading",
+          "tldr": "AIコーディングツールがエンドポイントセキュリティの防御を破壊し、セキュリティベンダーが長年築いてきた防壁を崩壊させたと研究者が指摘している。"
+        },
+        {
+          "title": "FCC bans new routers made outside the USA over security risks",
+          "link": "https://www.bleepingcomputer.com/news/security/fcc-bans-new-routers-made-outside-the-usa-over-security-risks/",
+          "description": "The Federal Communications Commission has updated its Covered List to include all consumer routers made in foreign countries, banning the sale of new models in the U.S. [...]",
+          "pubDate": "Tue, 24 Mar 2026 16:41:30 -0400",
+          "source": "BleepingComputer",
+          "tldr": "FCCは、外国製の消費者向けルーターの販売を禁止し、セキュリティリスクを理由にカバードリストを更新しました。"
+        },
+        {
+          "title": "TeamPCP Backdoors LiteLLM Versions 1.82.7–1.82.8 Likely via Trivy CI/CD Compromise",
+          "link": "https://thehackernews.com/2026/03/teampcp-backdoors-litellm-versions.html",
+          "description": "TeamPCP, the threat actor behind the recent compromises of Trivy and KICS, has now compromised a popular Python package named litellm, pushing two malicious versions containing a credential harvester, a Kubernetes lateral movement toolkit, and a persistent backdoor. Multiple security vendors, includ",
+          "pubDate": "Tue, 24 Mar 2026 23:51:00 +0530",
+          "source": "The Hacker News",
+          "tldr": "TeamPCPがTrivyとKICSの最近の侵害に続き、人気のPythonパッケージlitellmの悪意のあるバージョンを公開し、認証情報収集ツールやKubernetesの横移動ツールキット、持続的バックドアを含んでいることが確認されました。"
+        },
+        {
+          "title": "Firefox now has a free built-in VPN with 50GB monthly data limit",
+          "link": "https://www.bleepingcomputer.com/news/security/firefox-now-has-a-free-built-in-vpn-with-50gb-monthly-data-limit/",
+          "description": "Mozilla released Firefox 149 with added privacy protection through a built-in VPN tool offering up to 50GB of monthly traffic. [...]",
+          "pubDate": "Tue, 24 Mar 2026 13:23:01 -0400",
+          "source": "BleepingComputer",
+          "tldr": "MozillaはFirefox 149をリリースし、月間50GBのデータ制限付きの無料VPNツールを追加してプライバシー保護を強化しました。"
+        },
+        {
+          "title": "Tax Search Ads Deliver ScreenConnect Malware Using Huawei Driver to Disable EDR",
+          "link": "https://thehackernews.com/2026/03/tax-search-ads-deliver-screenconnect.html",
+          "description": "A large-scale malvertising campaign active since January 2026 has been observed targeting U.S.-based individuals searching for tax-related documents to serve rogue installers for ConnectWise ScreenConnect that drop a tool named HwAudKiller to blind security programs using the bring your own vulnerab",
+          "pubDate": "Tue, 24 Mar 2026 22:35:00 +0530",
+          "source": "The Hacker News",
+          "tldr": "TL;DR: 2026年1月から続く大規模なマルバタイジングキャンペーンが、税関連の文書を検索している米国の個人を狙い、ConnectWise ScreenConnectの不正インストーラーを配布し、EDRを無効化するHwAudKillerツールを導入している。"
+        },
+        {
+          "title": "5 Learnings from the First-Ever Gartner Market Guide for Guardian Agents",
+          "link": "https://thehackernews.com/2026/03/5-learnings-from-first-ever-gartner.html",
+          "description": "On February 25, 2026, Gartner published its inaugural Market Guide for Guardian Agents, marking an important milestone for this emerging category. For those unfamiliar with the various Gartner report types, “a Market Guide defines a market and explains what clients can expect it to do in the short t",
+          "pubDate": "Tue, 24 Mar 2026 22:06:05 +0530",
+          "source": "The Hacker News",
+          "tldr": "Gartnerが初めて発表した「Guardian Agents」のマーケットガイドでは、この新興カテゴリの市場定義とクライアントが短期的に期待できることが説明されています。"
+        },
+        {
+          "title": "Hackers Use Fake Resumes to Steal Enterprise Credentials and Deploy Crypto Miner",
+          "link": "https://thehackernews.com/2026/03/hackers-use-fake-resumes-to-steal.html",
+          "description": "An ongoing phishing campaign is targeting French-speaking corporate environments with fake resumes that lead to the deployment of cryptocurrency miners and information stealers. \"The campaign uses highly obfuscated VBScript files disguised as resume/CV documents, delivered through phishing emails,\" ",
+          "pubDate": "Tue, 24 Mar 2026 22:05:00 +0530",
+          "source": "The Hacker News",
+          "tldr": "フランス語圏の企業を狙ったフィッシングキャンペーンが、偽の履歴書を利用して暗号通貨マイナーや情報盗難ツールを展開している。攻撃者は、履歴書を装った高度に難読化されたVBScriptファイルをフィッシングメールで配布している。"
+        },
+        {
+          "title": "Microsoft fixes bug causing Classic Outlook sync issues with Gmail",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-outlook-sync-issues-for-gmail-users/",
+          "description": "​Microsoft has fixed a known issue causing Gmail and Yahoo email synchronization and connection problems for classic Outlook users. [...]",
+          "pubDate": "Tue, 24 Mar 2026 11:12:13 -0400",
+          "source": "BleepingComputer",
+          "tldr": "Microsoftは、クラシックOutlookユーザーにおけるGmailとYahooメールの同期および接続問題を引き起こしていた既知のバグを修正しました。"
+        },
+        {
+          "title": "GitHub 'OpenClaw Deployer' Repo Delivers Trojan Instead",
+          "link": "https://www.darkreading.com/application-security/github-openclaw-deployer-repo-delivers-trojan",
+          "description": "An AI-assisted campaign is spreading more than 300 poisoned packages for diverse assets ranging from developer tools to game cheats.",
+          "pubDate": "Tue, 24 Mar 2026 14:59:40 GMT",
+          "source": "Dark Reading",
+          "tldr": "GitHubの「OpenClaw Deployer」リポジトリが、開発者ツールやゲームチートなどの多様な資産向けに300以上の悪意のあるパッケージを配布しているAI支援キャンペーンが広がっている。"
+        },
+        {
+          "title": "Zero Trust: Bridging the Gap Between Authentication and Trust",
+          "link": "https://www.bleepingcomputer.com/news/security/zero-trust-bridging-the-gap-between-authentication-and-trust/",
+          "description": "Passing MFA doesn't mean a session is safe, attackers can hijack tokens and bypass identity checks. Specops Software explains why Zero Trust must verify both user identity and device health. [...]",
+          "pubDate": "Tue, 24 Mar 2026 10:02:12 -0400",
+          "source": "BleepingComputer",
+          "tldr": "TL;DR: MFAを通過してもセッションが安全とは限らず、攻撃者はトークンをハイジャックしてアイデンティティチェックを回避できるため、Zero Trustはユーザーのアイデンティティとデバイスの健康を両方確認する必要がある。"
+        },
+        {
+          "title": "HackerOne discloses employee data breach after Navia hack",
+          "link": "https://www.bleepingcomputer.com/news/security/hackerone-discloses-employee-data-breach-after-navia-hack/",
+          "description": "Bug bounty platform HackerOne is notifying hundreds of employees that their data was stolen after attackers hacked Navia, one of its U.S. benefits administrators. [...]",
+          "pubDate": "Tue, 24 Mar 2026 10:01:02 -0400",
+          "source": "BleepingComputer",
+          "tldr": "HackerOneは、米国の福利厚生管理者Naviaがハッキングされた後、数百人の従業員のデータが盗まれたことを通知しています。"
+        },
+        {
+          "title": "Infinite Campus warns of breach after ShinyHunters claims data theft",
+          "link": "https://www.bleepingcomputer.com/news/security/infinite-campus-warns-of-breach-after-shinyhunters-claims-data-theft/",
+          "description": "Infinite Campus, a widely used K-12 student information system, is warning customers of a data breach following an extortion attempt by a threat actor. [...]",
+          "pubDate": "Tue, 24 Mar 2026 09:48:38 -0400",
+          "source": "BleepingComputer",
+          "tldr": "Infinite Campusは、ShinyHuntersによるデータ盗難の主張を受けて、顧客にデータ侵害の警告を発しました。"
+        },
+        {
+          "title": "How a Large Bank Uses AI Digital Twins for Threat Hunting",
+          "link": "https://www.darkreading.com/threat-intelligence/how-large-bank-uses-ai-digital-twins-threat-hunting",
+          "description": "JPMorgan Chase uses digital fingerprints and digital twins to spot online attackers and malicious behaviors while also reducing pesky false alerts.",
+          "pubDate": "Tue, 24 Mar 2026 13:16:21 GMT",
+          "source": "Dark Reading",
+          "tldr": "JPMorgan Chaseは、デジタルフィンガープリンツとデジタルツインを活用してオンライン攻撃者や悪意のある行動を特定し、誤警報を減少させています。"
+        },
+        {
+          "title": "Yanluowang ransomware access broker gets 81 months in prison",
+          "link": "https://www.bleepingcomputer.com/news/security/yanluowang-ransomware-access-broker-gets-81-months-in-prison/",
+          "description": "A Russian national was sentenced to nearly 7 years in prison after pleading guilty to acting as an initial access broker (IAB) for Yanluowang ransomware attacks. [...]",
+          "pubDate": "Tue, 24 Mar 2026 09:06:03 -0400",
+          "source": "BleepingComputer",
+          "tldr": "ロシア国籍の男性が、Yanluowangランサムウェア攻撃の初期アクセスブローカー（IAB）としての罪を認め、約7年の懲役刑を言い渡されました。"
+        },
+        {
+          "title": "Microsoft Proposes Better Identity, Guardrails for AI Agents",
+          "link": "https://www.darkreading.com/identity-access-management-security/microsoft-proposes-better-identity-guardrails-ai-agents",
+          "description": "Companies need better controls to manage key threats rising from the growth of agentic AI. These new features provide a starting point.",
+          "pubDate": "Tue, 24 Mar 2026 12:28:25 GMT",
+          "source": "Dark Reading",
+          "tldr": "TL;DR: マイクロソフトは、エージェントAIの成長に伴う主要な脅威を管理するためのより良いアイデンティティ管理とガードレールを提案しており、新機能がその出発点となる。"
+        },
+        {
+          "title": "Dutch Ministry of Finance discloses breach affecting employees",
+          "link": "https://www.bleepingcomputer.com/news/security/dutch-ministry-of-finance-discloses-breach-affecting-employees/",
+          "description": "The Dutch Ministry of Finance confirmed on Monday that some of its systems were breached in a cyberattack detected last week. [...]",
+          "pubDate": "Tue, 24 Mar 2026 08:03:08 -0400",
+          "source": "BleepingComputer",
+          "tldr": "オランダ財務省は、先週検出されたサイバー攻撃により一部のシステムが侵害されたことを確認しました。"
+        }
+      ]
+    }
+  ]
+}

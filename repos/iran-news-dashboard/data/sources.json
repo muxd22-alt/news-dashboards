@@ -1,0 +1,40 @@
+{
+  "lastUpdated": "2026-03-25T05:19:17.849Z",
+  "sources": [
+    {
+      "id": "dod-centcom",
+      "label": "DoD / CENTCOM official releases",
+      "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/",
+      "category": "us_casualties",
+      "priority": "primary"
+    },
+    {
+      "id": "ocha",
+      "label": "UN OCHA situation reports",
+      "url": "https://www.unocha.org/publications",
+      "category": "civilian_casualties",
+      "priority": "primary"
+    },
+    {
+      "id": "unhcr",
+      "label": "UNHCR operational updates",
+      "url": "https://www.unhcr.org/operational-data-and-statistics",
+      "category": "displacement_wounded_context",
+      "priority": "primary"
+    },
+    {
+      "id": "fred-gasregw",
+      "label": "FRED GASREGW",
+      "url": "https://fred.stlouisfed.org/series/GASREGW",
+      "category": "gas_price",
+      "priority": "primary"
+    },
+    {
+      "id": "yahoo-brent",
+      "label": "Yahoo Finance Brent (BZ=F)",
+      "url": "https://finance.yahoo.com/quote/BZ=F/",
+      "category": "oil",
+      "priority": "primary"
+    }
+  ]
+}

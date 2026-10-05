@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/font/Thmanyah-Font-Family/thmanyah%20typeface/thmanyahsans/woff2/thmanyahsans-Light.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/Thmanyah-Font-Family/thmanyah%20typeface/thmanyahsans/woff2/thmanyahsans-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/font/Thmanyah-Font-Family/thmanyah%20typeface/thmanyahsans/woff2/thmanyahsans-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/font/Thmanyah-Font-Family/thmanyah%20typeface/thmanyahsans/woff2/thmanyahsans-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/font/Thmanyah-Font-Family/thmanyah%20typeface/thmanyahsans/woff2/thmanyahsans-Black.woff2') format('woff2');
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-thmanyah: "Thmanyah Sans", "Cairo", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-primary-50: #F6F4EB;
+  --color-primary-100: #91C8E4;
+  --color-primary-500: #749BC2;
+  --color-primary-600: #4682A9;
+  --color-primary-700: #30658A;
+
+  --color-accent-500: #D4AF37;
+  --color-accent-600: #B8941D;
+
+  --color-success: #27AE60;
+  --color-warning: #E67E22;
+  --color-error: #E74C3C;
+
+  --color-neutral-100: #F6F4EB; /* Used #F6F4EB as the light neutral background as well */
+  --color-neutral-300: #CCCCCC;
+  --color-neutral-500: #666666;
+  --color-neutral-700: #333333;
+
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+}
+
+@layer base {
+  body {
+    @apply font-thmanyah bg-neutral-100 text-neutral-700;
+  }
+  
+  [dir="ltr"] body {
+    @apply font-inter;
+  }
+}
+
+@layer utilities {
+  .pb-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.font-thmanyah {
+  font-family: var(--font-thmanyah);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}

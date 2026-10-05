@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-cairo: "Cairo", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-primary-50: #F0F4FB;
+  --color-primary-100: #D4E1F7;
+  --color-primary-500: #1F3A70;
+  --color-primary-600: #1A2F5C;
+  --color-primary-700: #152548;
+
+  --color-accent-500: #D4AF37;
+  --color-accent-600: #B8941D;
+
+  --color-success: #27AE60;
+  --color-warning: #E67E22;
+  --color-error: #E74C3C;
+
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-300: #CCCCCC;
+  --color-neutral-500: #666666;
+  --color-neutral-700: #333333;
+
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+}
+
+@layer base {
+  body {
+    @apply font-cairo bg-neutral-100 text-neutral-700;
+  }
+  
+  [dir="ltr"] body {
+    @apply font-inter;
+  }
+}
+
+@layer utilities {
+  .pb-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+}
+
+.font-cairo {
+  font-family: var(--font-cairo);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}

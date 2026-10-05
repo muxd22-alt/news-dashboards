@@ -1,0 +1,27 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Default: Deny all
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+
+    // Profiles: Authenticated users can upload their own profile pic
+    // Publicly readable for marketplace visibility
+    match /profiles/{fileName} {
+      allow read: if true;
+      allow write: if request.auth != null 
+                   && request.resource.size < 5 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+    }
+
+    // Portfolios: Vendors can manage their portfolios
+    match /portfolios/{fileName} {
+      allow read: if true;
+      allow write: if request.auth != null 
+                   && request.resource.size < 10 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+    }
+  }
+}

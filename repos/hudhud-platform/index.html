@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODHOD | هُدهُد - التميز في الخدمات</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    borderRadius: { 'apple': '22px' },
+                    colors: {
+                        apple: { 
+                            bg: '#F5F5F7', 
+                            gray: '#86868b', 
+                            blue: '#0071e3', 
+                            emerald: '#064e3b',
+                            glass: 'rgba(255, 255, 255, 0.72)',
+                            darkGlass: 'rgba(29, 29, 31, 0.8)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root { --apple-blur: saturate(180%) blur(20px); }
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #F5F5F7; 
+            color: #1d1d1f;
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.5s ease;
+        }
+        .dark body { background-color: #000000; color: #f5f5f7; }
+
+        /* Apple Glassmorphism */
+        .apple-glass {
+            background-color: var(--apple-glass);
+            backdrop-filter: var(--apple-blur);
+            -webkit-backdrop-filter: var(--apple-blur);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .dark .apple-glass {
+            background-color: rgba(29, 29, 31, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hairline Borders */
+        .hairline { border: 0.5px solid rgba(0, 0, 0, 0.12); }
+        .dark .hairline { border: 0.5px solid rgba(255, 255, 255, 0.12); }
+
+        /* Sparse Layout Transitions */
+        .reveal { opacity: 0; transform: translateY(20px); animation: revealUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+
+        /* Custom Inputs */
+        .apple-input {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .apple-input:focus {
+            background: #ffffff;
+            border-color: #0071e3;
+            box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+        }
+        .dark .apple-input { background: rgba(255, 255, 255, 0.08); }
+        .dark .apple-input:focus { background: #1d1d1f; }
+
+        .btn-apple {
+            background: #0071e3;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 980px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-apple:hover { opacity: 0.9; transform: scale(1.02); }
+        .btn-apple:active { transform: scale(0.98); }
+
+        /* Sparse Grid */
+        #results-grid { gap: 32px; }
+        
+        /* Subtle Gradient Text */
+        .hero-text {
+            background: linear-gradient(135deg, #000000 0%, #434343 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .hero-text {
+            background: linear-gradient(135deg, #ffffff 0%, #a1a1a1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden selection:bg-apple-blue/30">
+
+    <!-- Sparse Navigation -->
+    <nav class="fixed top-0 w-full z-50 apple-glass hairline h-14 flex items-center px-6 md:px-12 justify-between">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="HODHOD" class="w-8 h-8 object-contain" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=hodhod'">
+            <span class="font-bold tracking-tight text-lg">هُدهُد</span>
+        </div>
+        <div class="flex items-center gap-6">
+            <button onclick="toggleDarkMode()" class="text-xl opacity-60 hover:opacity-100 transition-opacity">
+                <span id="dark-icon">🌙</span>
+            </button>
+            <button onclick="showRegisterModal()" class="text-xs font-semibold hover:text-apple-blue transition-colors">سجل خدمتك</button>
+            <a href="seller.html" class="btn-apple text-xs">لوحة البائع</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Extreme Sparse Focus -->
+    <header class="pt-40 pb-20 px-6 text-center reveal">
+        <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 hero-text">
+            البحث عن الجودة بكل بساطة.
+        </h1>
+        <p class="text-xl md:text-2xl text-apple-gray font-medium max-w-2xl mx-auto leading-relaxed">
+            منصة "هُدهُد" تربطك بأفضل مقدمي الخدمات في المملكة بتقنيات Opal الذكية.
+        </p>
+    </header>
+
+    <!-- Centered Search Experience -->
+    <div class="max-w-3xl mx-auto px-6 mb-24 reveal" style="animation-delay: 0.2s">
+        <div class="apple-glass rounded-apple p-3 hairline flex flex-col md:flex-row gap-2">
+            <select id="city-select" onchange="resetAndSearch()" class="apple-input rounded-apple px-6 py-4 font-bold outline-none appearance-none cursor-pointer md:w-40 text-center">
+                <option value="">كل المدن</option>
+            </select>
+            <div class="relative flex-1">
+                <input id="search-input" oninput="debouncedSearch()" type="text" placeholder="ماذا تبحث عنه اليوم؟ (مثلا: سباك، كهربائي)" class="w-full apple-input rounded-apple px-8 py-4 font-semibold outline-none text-lg">
+                <span class="absolute left-6 top-1/2 -translate-y-1/2 opacity-30">🔍</span>
+            </div>
+        </div>
+        <p id="result-status" class="text-center mt-6 text-[11px] font-bold uppercase tracking-[0.2em] text-apple-gray opacity-60">ذكاء اصطناعي • سرعة • خصوصية</p>
+    </div>
+
+    <!-- Minimalist Results Container -->
+    <main class="max-w-6xl mx-auto p-6 pb-40">
+        <div id="results-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Loading State -->
+            <div id="loader" class="hidden col-span-full py-20 text-center animate-pulse">
+                <div class="w-12 h-12 bg-apple-blue rounded-full mx-auto mb-4 opacity-20"></div>
+                <div class="text-apple-gray font-medium">جاري استكشاف السحابة...</div>
+            </div>
+        </div>
+
+        <div id="pagination-container" class="hidden text-center mt-20">
+            <button onclick="loadMore()" class="apple-glass hairline px-12 py-4 rounded-full font-bold hover:bg-black/5 dark:hover:bg-white/5 transition-all outline-none">
+                استعراض المزيد
+            </button>
+        </div>
+    </main>
+
+    <!-- Apple Style Profile Modal -->
+    <div id="profile-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-md opacity-0 transition-opacity duration-300">
+        <div class="apple-glass w-full max-w-xl rounded-[32px] overflow-hidden hairline shadow-2xl scale-95 transition-transform duration-300">
+            <div id="profile-content" class="p-10 space-y-6"></div>
+            <div class="p-8 flex gap-4 border-t border-black/5 dark:border-white/5">
+                <button onclick="hideProfile()" class="flex-1 font-bold text-apple-gray hover:text-black dark:hover:text-white transition-colors">إغلاق</button>
+                <div id="profile-wa-btn" class="flex-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clean Registration Modal -->
+    <div id="register-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
+        <div class="apple-glass w-full max-w-md rounded-[32px] p-10 hairline shadow-2xl">
+            <h2 class="text-3xl font-black mb-8 text-center tracking-tight">انضم كشريك</h2>
+            <form onsubmit="handleRegister(event)" class="space-y-4">
+                <input required id="reg-name" type="text" placeholder="الاسم الكامل" class="w-full apple-input rounded-apple px-6 py-4 font-bold outline-none">
+                <input required id="reg-whatsapp" type="text" placeholder="رقم الواتساب" class="w-full apple-input rounded-apple px-6 py-4 font-bold outline-none">
+                <button type="submit" class="w-full btn-apple py-5 text-lg mt-4">إرسال الطلب</button>
+                <button type="button" onclick="hideRegisterModal()" class="w-full text-apple-gray font-bold mt-4 text-sm">إلغاء</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const URL = "https://qwjhtjfaxtokxtirtzbu.supabase.co";
+        const KEY = "sb_publishable_yD-nOwIJDkT7yyk9jKpPpA_TAvVEgot";
+        const HEADERS = { "apikey": KEY, "Authorization": `Bearer ${KEY}`, "Content-Type": "application/json" };
+
+        let searchTimeout;
+        let currentPage = 0;
+        const pageSize = 6;
+        let isLastPage = false;
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            document.getElementById('dark-icon').innerText = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            document.getElementById('dark-icon').innerText = '☀️';
+        }
+
+        async function loadCities() {
+            try {
+                const res = await fetch(`${URL}/rest/v1/providers?select=city`, { headers: HEADERS });
+                const data = await res.json();
+                const cities = [...new Set(data.map(i => i.city))].filter(Boolean).sort();
+                const dropdown = document.getElementById('city-select');
+                dropdown.innerHTML = '<option value="">المدينة</option>';
+                cities.forEach(city => { dropdown.innerHTML += `<option value="${city}">${city}</option>`; });
+            } catch (e) {}
+        }
+
+        function resetAndSearch() {
+            currentPage = 0;
+            isLastPage = false;
+            document.getElementById('results-grid').innerHTML = '';
+            performSearch();
+        }
+
+        function debouncedSearch() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(resetAndSearch, 400);
+        }
+
+        function loadMore() {
+            if (isLastPage) return;
+            currentPage++;
+            performSearch();
+        }
+
+        async function performSearch() {
+            const cityDropdown = document.getElementById('city-select').value;
+            let queryInput = document.getElementById('search-input').value.trim();
+            const grid = document.getElementById('results-grid');
+            const status = document.getElementById('result-status');
+            const paginator = document.getElementById('pagination-container');
+            const loader = document.getElementById('loader');
+
+            if (currentPage === 0) loader.classList.remove('hidden');
+
+            const fillers = ["ابغى", "ابي", "اريد", "في", "من", "عن", "بـ", "مع", "هل", "فيه", "الـ"];
+            let keywords = queryInput.split(/\s+/).filter(word => word.length > 1 && !fillers.includes(word));
+
+            const from = currentPage * pageSize;
+            const to = from + pageSize - 1;
+
+            let fetchUrl = `${URL}/rest/v1/providers_with_ratings?select=*&order=avg_rating.desc`;
+            if (cityDropdown) fetchUrl += `&city=ilike.*${cityDropdown}*`;
+            
+            if (keywords.length > 0) {
+                // 🧠 ARABIC INTELLIGENCE: Build groups for each word
+                const wordGroups = keywords.map(w => {
+                    let variants = [w];
+                    let norm = w.replace(/[أإآ]/g, 'ا').replace(/ى/g, 'ي');
+                    if (norm !== w) variants.push(norm);
+
+                    // Stemming / Suffix stripping
+                    if (w.endsWith('ة') || w.endsWith('ه')) variants.push(w.slice(0, -1)); 
+                    if (w.endsWith('ي') || w.endsWith('ى')) variants.push(w.slice(0, -1)); 
+                    if (w.length > 4) variants.push(w.substring(0, w.length - 1));
+
+                    // Join variants with OR across columns
+                    const cols = ['category', 'city', 'region', 'bio_ar', 'name'];
+                    const variantConditions = [];
+                    [...new Set(variants)].forEach(v => {
+                        cols.forEach(c => variantConditions.push(`${c}.ilike.*${v}*`));
+                    });
+                    return `or(${variantConditions.join(',')})`;
+                });
+                
+                fetchUrl += `&and=(${wordGroups.join(',')})`;
+            }
+
+            const rangeHeader = { ...HEADERS, "Range": `${from}-${to}`, "Prefer": "count=exact" };
+
+            try {
+                const res = await fetch(fetchUrl, { headers: rangeHeader });
+                const providers = await res.json();
+                loader.classList.add('hidden');
+                
+                const contentRange = res.headers.get("Content-Range");
+                let totalCount = contentRange ? parseInt(contentRange.split('/')[1]) : providers.length;
+
+                if (currentPage === 0 && providers.length === 0) {
+                    grid.innerHTML = `
+                        <div class="col-span-full py-40 text-center reveal">
+                            <div class="text-6xl mb-6">🏜️</div>
+                            <div class="text-2xl font-black text-apple-gray opacity-40">لا توجد نتائج مطابقة</div>
+                        </div>`;
+                    paginator.classList.add('hidden');
+                    return;
+                }
+
+                providers.forEach((p, idx) => {
+                    const delay = (idx % pageSize) * 0.1;
+                    grid.innerHTML += `
+                        <div onclick="viewProfile(${p.id})" class="apple-glass rounded-[28px] p-8 hairline cursor-pointer transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] reveal group" style="animation-delay: ${delay}s">
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="bg-apple-blue/10 text-apple-blue px-3 py-1 rounded-full text-[10px] font-bold">★ ${parseFloat(p.avg_rating || 0).toFixed(1)}</div>
+                                <div class="text-[10px] font-black tracking-widest uppercase opacity-30">${p.category}</div>
+                            </div>
+                            <h3 class="text-2xl font-black mb-2">${p.name}</h3>
+                            <p class="text-sm text-apple-gray font-bold mb-6">📍 ${p.city} • ${p.region || 'المملكة'}</p>
+                            
+                            <div class="bg-black/5 dark:bg-white/5 rounded-2xl p-4 flex items-center gap-3">
+                                <div class="text-[11px] font-bold opacity-60 uppercase">الاستجابة: <span class="text-apple-blue">${p.avg_response_time || 'عاجل'}</span></div>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                isLastPage = (from + providers.length >= totalCount);
+                paginator.classList.toggle('hidden', isLastPage);
+                status.innerText = `مكتشف الآن: ${totalCount} شريك | عرض ${from + providers.length}`;
+            } catch (err) { loader.classList.add('hidden'); }
+        }
+
+        async function viewProfile(id) {
+            const modal = document.getElementById('profile-modal');
+            const content = document.getElementById('profile-content');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.replace('opacity-0', 'opacity-100');
+                modal.children[0].classList.replace('scale-95', 'scale-100');
+            }, 10);
+            
+            content.innerHTML = '<div class="text-center py-20 font-bold opacity-20">جاري التحميل...</div>';
+            
+            try {
+                const res = await fetch(`${URL}/rest/v1/providers_with_ratings?id=eq.${id}&select=*`, { headers: HEADERS });
+                const p = (await res.json())[0];
+                content.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-xs font-black tracking-widest uppercase text-apple-blue mb-2">${p.category}</div>
+                        <h2 class="text-4xl font-black mb-6">${p.name}</h2>
+                        <div class="text-apple-gray font-bold mb-8">📍 ${p.city}، ${p.region || ''}</div>
+                        <div class="text-lg leading-relaxed text-right bg-black/5 dark:bg-white/5 p-8 rounded-[24px]">
+                            ${p.bio_ar || 'نحن فخورون بتقديم أفضل جودة لعملائنا في جميع أنحاء المنطقة.'}
+                        </div>
+                        <div class="mt-8 flex justify-center gap-8 text-sm font-bold text-apple-gray">
+                            <div>⭐ ${parseFloat(p.avg_rating || 5.0).toFixed(1)} تقييم</div>
+                            <div>⚡ ${p.avg_response_time || 'سريع'}</div>
+                        </div>
+                    </div>
+                `;
+                document.getElementById('profile-wa-btn').innerHTML = `<a href="https://wa.me/${p.whatsapp}" target="_blank" class="btn-apple block text-center">تواصل الآن</a>`;
+            } catch (e) {}
+        }
+
+        function hideProfile() {
+            const modal = document.getElementById('profile-modal');
+            modal.classList.replace('opacity-100', 'opacity-0');
+            modal.children[0].classList.replace('scale-100', 'scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        function showRegisterModal() { document.getElementById('register-modal').classList.remove('hidden'); }
+        function hideRegisterModal() { document.getElementById('register-modal').classList.add('hidden'); }
+        function handleRegister(e) { e.preventDefault(); location.reload(); }
+
+        window.onload = () => { loadCities(); performSearch(); };
+    </script>
+</body>
+</html>

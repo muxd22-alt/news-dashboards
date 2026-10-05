@@ -1,0 +1,37 @@
+{
+  "scout_results": [
+    {
+      "gap_topic": "Quantum Biology Discovery Explained",
+      "gap_date": "Sun, 05 Apr 2026 06:36:47 +0000",
+      "research_topics": [
+        "Quantum coherence in photosynthesis",
+        "Orchestrated Objective Reduction theory",
+        "Quantum error correction in biological systems"
+      ],
+      "found_urls": [
+        {
+          "url": "https://www.efbpublic.org/quantum-biology/",
+          "snippet": "Quantumbiologyinvestigates howquantummechanical phenomena—such as superposition,coherence, tunneling, and entanglement—might influence or ...",
+          "confidence": 0.582,
+          "search_query": "Quantum coherence in photosynthesis quantum biology quantum computing"
+        },
+        {
+          "url": "https://physicsworld.com/a/is-photosynthesis-quantum-ish/",
+          "snippet": "Early talk of “quantumcoherence”inphotosynthesisbeing akin to thatinquantumcomputers, where it underpins the faster and more efficient ...",
+          "confidence": 0.576,
+          "search_query": "Quantum coherence in photosynthesis quantum biology quantum computing"
+        },
+        {
+          "url": "https://physicsworld.com/a/quantum-mechanics-boosts-photosynthesis/",
+          "snippet": "The latest work,incontrast, was carried out at room temperature, suggesting thatquantumcoherencereally does play a roleinphotosynthesis.",
+          "confidence": 0.572,
+          "search_query": "Quantum coherence in photosynthesis quantum biology quantum computing"
+        }
+      ],
+      "gap_reason": "Understanding how quantum effects enable near-perfect energy transfer in plant light-harvesting complexes could reveal biomimetic solar technology applications."
+    }
+  ],
+  "scouted_at": "2026-04-05T08:54:10.001009+00:00",
+  "total_gaps_available": 1,
+  "gaps_processed": 1
+}

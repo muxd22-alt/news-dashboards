@@ -1,0 +1,63 @@
+export const SAUDI_CITIES = [
+  { id: 'riyadh', ar: 'الرياض', en: 'Riyadh' },
+  { id: 'jeddah', ar: 'جدة', en: 'Jeddah' },
+  { id: 'mecca', ar: 'مكة المكرمة', en: 'Mecca' },
+  { id: 'medina', ar: 'المدينة المنورة', en: 'Medina' },
+  { id: 'dammam', ar: 'الدمام', en: 'Dammam' },
+  { id: 'taif', ar: 'الطائف', en: 'Taif' },
+  { id: 'tabuk', ar: 'تبوك', en: 'Tabuk' },
+  { id: 'buraydah', ar: 'بريدة', en: 'Buraydah' },
+  { id: 'khamis_mushait', ar: 'خميس مشيط', en: 'Khamis Mushait' },
+  { id: 'abha', ar: 'أبها', en: 'Abha' },
+  { id: 'al_ahsa', ar: 'الأحساء', en: 'Al Ahsa' },
+  { id: 'khobar', ar: 'الخبر', en: 'Khobar' },
+  { id: 'najran', ar: 'نجران', en: 'Najran' },
+  { id: 'hail', ar: 'حائل', en: 'Hail' },
+  { id: 'jubail', ar: 'الجبيل', en: 'Jubail' },
+  { id: 'yanbu', ar: 'ينبع', en: 'Yanbu' },
+  { id: 'arar', ar: 'عرعر', en: 'Arar' },
+  { id: 'sakakah', ar: 'سكاكا', en: 'Sakakah' },
+  { id: 'jazan', ar: 'جازان', en: 'Jazan' },
+  { id: 'qurayyat', ar: 'القريات', en: 'Qurayyat' },
+  { id: 'dhahran', ar: 'الظهران', en: 'Dhahran' },
+  { id: 'baha', ar: 'الباحة', en: 'Baha' },
+  { id: 'qatif', ar: 'القطيف', en: 'Qatif' },
+  { id: 'kharj', ar: 'الخرج', en: 'Kharj' },
+  { id: 'bisha', ar: 'بيشة', en: 'Bisha' },
+  { id: 'dawadmi', ar: 'الدوادمي', en: 'Dawadmi' },
+  { id: 'zulfi', ar: 'الزلفي', en: 'Zulfi' },
+  { id: 'khafji', ar: 'الخفجي', en: 'Khafji' },
+  { id: 'turaif', ar: 'طريف', en: 'Turaif' },
+  { id: 'afif', ar: 'عفيف', en: 'Afif' },
+  { id: 'wadi_ad_dawasir', ar: 'وادي الدواسر', en: 'Wadi ad-Dawasir' },
+  { id: 'rabigh', ar: 'رابغ', en: 'Rabigh' },
+  { id: 'ar_rass', ar: 'الرس', en: 'Ar Rass' },
+  { id: 'majmaah', ar: 'المجمعة', en: 'Majmaah' },
+  { id: 'unaizah', ar: 'عنيزة', en: 'Unaizah' },
+  { id: 'al_qunfudhah', ar: 'القنفذة', en: 'Al Qunfudhah' },
+  { id: 'hafar_al_batin', ar: 'حفر الباطن', en: 'Hafar Al Batin' },
+  { id: 'ad_dilam', ar: 'الدلم', en: 'Ad Dilam' },
+  { id: 'al_laith', ar: 'الليث', en: 'Al Laith' },
+  { id: 'tayma', ar: 'تيماء', en: 'Tayma' },
+  { id: 'al_khafji', ar: 'الخفجي', en: 'Al Khafji' },
+  { id: 'sabya', ar: 'صبيا', en: 'Sabya' },
+  { id: 'abu_arish', ar: 'أبو عريش', en: 'Abu Arish' },
+  { id: 'samta', ar: 'صامطة', en: 'Samta' },
+  { id: 'al_makhwah', ar: 'المخواة', en: 'Al Makhwah' },
+  { id: 'umluj', ar: 'أملج', en: 'Umluj' },
+  { id: 'al_wajh', ar: 'الوجه', en: 'Al Wajh' },
+  { id: 'duba', ar: 'ضباء', en: 'Duba' },
+  { id: 'tathlith', ar: 'تثليث', en: 'Tathlith' },
+  { id: 'turabah', ar: 'تربة', en: 'Turabah' },
+  { id: 'ranyah', ar: 'رنية', en: 'Ranyah' },
+  { id: 'al_khurmah', ar: 'الخرمة', en: 'Al Khurmah' },
+  { id: 'al_qaisumah', ar: 'القيصومة', en: 'Al Qaisumah' }
+];
+
+export const getCityName = (id: string, language: 'ar' | 'en') => {
+  const city = SAUDI_CITIES.find(c => c.id === id);
+  if (city) {
+    return language === 'ar' ? city.ar : city.en;
+  }
+  return id; 
+};

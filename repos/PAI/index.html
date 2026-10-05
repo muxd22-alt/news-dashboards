@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private AI Newsroom</title>
+  <meta name="description" content="A personal serverless AI tech newsroom and daily digest.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header class="glass-header">
+      <div class="logo">
+        <h1>Private AI <span>Newsroom</span></h1>
+        <p class="subtitle">Personal Intelligence Extracts & Tech Digest</p>
+      </div>
+      <div class="actions">
+        <button class="add-btn" onclick="toggleAddSection()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Add Link
+        </button>
+        <a href="rss.xml" class="rss-btn" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+          RSS
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="add-link-section" class="add-section">
+        <div class="glass-card">
+          <h2>Collect Intel</h2>
+          <form id="add-form">
+            <input type="url" id="url-input" placeholder="Paste link here (TikTok, X, YouTube, Article)..." required>
+            <button type="submit" id="submit-btn">Send to Engine</button>
+          </form>
+          <div id="status-message"></div>
+        </div>
+      </section>
+
+      <section class="master-digest">
+        <h2>Executive Summary</h2>
+        <div class="glass-card gradient-border" id="daily-digest-content">
+          <p class="loading">Loading synthesis...</p>
+        </div>
+      </section>
+
+      <section class="gaps-section">
+        <h2>Knowledge Gaps</h2>
+        <div class="grid" id="gaps-container">
+          <p class="loading">Loading gaps...</p>
+        </div>
+        <div class="pagination" id="gaps-pagination"></div>
+      </section>
+
+      <section class="feed-grid">
+        <h2>Recent Extracts</h2>
+        <div class="grid" id="feed-container">
+          <p class="loading">Loading links...</p>
+        </div>
+        <div class="pagination" id="feed-pagination"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

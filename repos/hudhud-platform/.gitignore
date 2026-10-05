@@ -1,0 +1,14 @@
+directory.db
+directory.db-wal
+directory.db
+__pycache__/
+*.pyc
+.env
+.DS_Store
+*.log
+.agents
+.agent
+agent/
+.opencode
+.code-workspace.code-workspace
+skills/

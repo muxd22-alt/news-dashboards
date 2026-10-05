@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الشريك | HODHOD - التميز في الإدارة</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    borderRadius: { 'apple': '22px' },
+                    colors: {
+                        apple: { 
+                            bg: '#F5F5F7', 
+                            gray: '#86868b', 
+                            blue: '#0071e3', 
+                            glass: 'rgba(255, 255, 255, 0.72)',
+                            darkGlass: 'rgba(29, 29, 31, 0.8)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root { --apple-blur: saturate(180%) blur(20px); }
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #F5F5F7; 
+            color: #1d1d1f;
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.5s ease;
+        }
+        .dark body { background-color: #000000; color: #f5f5f7; }
+
+        .apple-glass {
+            background-color: var(--apple-glass);
+            backdrop-filter: var(--apple-blur);
+            -webkit-backdrop-filter: var(--apple-blur);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .dark .apple-glass {
+            background-color: rgba(29, 29, 31, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hairline { border: 0.5px solid rgba(0, 0, 0, 0.12); }
+        .dark .hairline { border: 0.5px solid rgba(255, 255, 255, 0.12); }
+
+        .apple-input {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .apple-input:focus {
+            background: #ffffff;
+            border-color: #0071e3;
+            box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+        }
+        .dark .apple-input { background: rgba(255, 255, 255, 0.08); }
+        .dark .apple-input:focus { background: #1d1d1f; }
+
+        .btn-apple {
+            background: #0071e3;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 980px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-apple:hover { opacity: 0.9; transform: scale(1.02); }
+        .btn-apple:active { transform: scale(0.98); }
+
+        .reveal { opacity: 0; transform: translateY(20px); animation: revealUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+
+        .hero-text {
+            background: linear-gradient(135deg, #000000 0%, #434343 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .hero-text {
+            background: linear-gradient(135deg, #ffffff 0%, #a1a1a1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden selection:bg-apple-blue/30">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 apple-glass hairline h-14 flex items-center px-6 md:px-12 justify-between">
+        <div class="flex items-center gap-3">
+            <span class="font-bold tracking-tight text-lg">لوحة الشريك</span>
+        </div>
+        <div class="flex items-center gap-6">
+            <button onclick="toggleDarkMode()" class="text-xl opacity-60 hover:opacity-100 transition-opacity">
+                <span id="dark-icon">🌙</span>
+            </button>
+            <a href="index.html" class="text-xs font-semibold hover:text-apple-blue transition-colors">العودة للدليل</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-6 pt-32 pb-40 space-y-12">
+        
+        <!-- Login Section -->
+        <div id="login-section" class="apple-glass rounded-[32px] p-12 text-center hairline reveal shadow-2xl space-y-8">
+            <div class="text-6xl mb-4">🔓</div>
+            <h1 class="text-4xl font-black hero-text">مرحبًا بك مجددًا</h1>
+            <p class="text-apple-gray font-medium text-lg">أدخل كود الشريك للوصول إلى بياناتك السحابية</p>
+            <div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                <input id="provider-id-input" type="text" placeholder="كود الشريك (123)" class="flex-1 apple-input rounded-apple px-6 py-4 text-2xl font-black text-center outline-none">
+                <button onclick="login()" id="login-btn" class="btn-apple text-lg py-4 px-10">دخول</button>
+            </div>
+            <p class="text-xs text-apple-gray font-medium italic opacity-60">تواصل مع الدعم في حال فقدان الكود</p>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div id="dashboard" class="hidden space-y-12 reveal">
+            
+            <!-- Welcome Header -->
+            <div class="flex items-center gap-8 p-10 apple-glass rounded-[32px] hairline">
+                <div class="w-20 h-20 bg-apple-blue/10 text-apple-blue rounded-full flex items-center justify-center text-4xl shadow-inner">👤</div>
+                <div>
+                    <h2 id="dash-name" class="text-3xl font-black mb-1">...</h2>
+                    <p id="dash-cat" class="text-lg text-apple-gray font-semibold">...</p>
+                </div>
+            </div>
+
+            <!-- Stats Sparse Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="apple-glass p-8 rounded-[32px] text-center hairline">
+                    <div id="stat-rating" class="text-4xl font-black text-apple-blue mb-1">--</div>
+                    <div class="text-[10px] font-black uppercase tracking-widest opacity-40">التقييم العام</div>
+                </div>
+                <div class="apple-glass p-8 rounded-[32px] text-center hairline">
+                    <div id="stat-reviews" class="text-4xl font-black text-apple-blue mb-1">--</div>
+                    <div class="text-[10px] font-black uppercase tracking-widest opacity-40">إجمالي الآراء</div>
+                </div>
+                <div class="apple-glass p-8 rounded-[32px] text-center hairline opacity-40">
+                    <div class="text-2xl font-bold mb-1">0</div>
+                    <div class="text-[10px] font-black uppercase tracking-widest">المشاهدات</div>
+                </div>
+                <div class="apple-glass p-8 rounded-[32px] text-center hairline opacity-40">
+                    <div class="text-2xl font-bold mb-1">--</div>
+                    <div class="text-[10px] font-black uppercase tracking-widest">الإيرادات</div>
+                </div>
+            </div>
+
+            <!-- Profile Editor -->
+            <div class="apple-glass rounded-[40px] p-12 hairline space-y-10 shadow-xl">
+                <h3 class="text-2xl font-black text-center hero-text tracking-tight">إدارة الهوية الرقمية</h3>
+                <form onsubmit="handleUpdate(event)" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-xs font-black mb-3 opacity-40 mr-2">المدينة</label>
+                            <input id="edit-city" type="text" class="w-full apple-input rounded-apple px-6 py-4 font-bold outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black mb-3 opacity-40 mr-2">الحي / المنطقة</label>
+                            <input id="edit-region" type="text" class="w-full apple-input rounded-apple px-6 py-4 font-bold outline-none">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-xs font-black mb-3 opacity-40 mr-2">وقت الاستجابة المتوقع</label>
+                            <select id="edit-response-time" class="w-full apple-input rounded-apple px-6 py-4 font-bold outline-none appearance-none cursor-pointer">
+                                <option value="أقل من 30 دقيقة">أقل من 30 دقيقة</option>
+                                <option value="ساعة">ساعة</option>
+                                <option value="ساعتين">ساعتين</option>
+                                <option value="يوم واحد">يوم واحد</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black mb-3 opacity-40 mr-2">معرض الأعمال (رابط صورة1، رابط صورة2)</label>
+                            <input id="edit-images" type="text" placeholder="https://..." class="w-full apple-input rounded-apple px-6 py-4 font-bold outline-none text-xs">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-black mb-3 opacity-40 mr-2">نبذة عن خدماتك (Brief)</label>
+                        <textarea id="edit-bio" class="w-full apple-input rounded-apple px-6 py-4 h-48 text-lg font-medium outline-none resize-none" placeholder="اكتب شيئاً مميزاً عنك..."></textarea>
+                    </div>
+                    <div class="text-center pt-4">
+                        <button type="submit" id="update-btn" class="btn-apple text-xl py-5 px-20">حفظ التغييرات</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Reviews Management -->
+            <div class="space-y-8">
+                <h3 class="text-2xl font-black text-right mr-4 opacity-80">أحدث المراجعات</h3>
+                <div id="seller-reviews" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const SUPABASE_URL = "https://qwjhtjfaxtokxtirtzbu.supabase.co";
+        const SUPABASE_KEY = "sb_publishable_yD-nOwIJDkT7yyk9jKpPpA_TAvVEgot";
+        const HEADERS = { "apikey": SUPABASE_KEY, "Authorization": `Bearer ${SUPABASE_KEY}`, "Content-Type": "application/json" };
+
+        let currentId = null;
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            document.getElementById('dark-icon').innerText = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            document.getElementById('dark-icon').innerText = '☀️';
+        }
+
+        async function login() {
+            const id = document.getElementById('provider-id-input').value;
+            if (!id) return;
+            
+            const btn = document.getElementById('login-btn');
+            btn.innerText = 'جاري التحقق...';
+            
+            try {
+                const res = await fetch(`${SUPABASE_URL}/rest/v1/providers_with_ratings?id=eq.${id}&select=*`, { headers: HEADERS });
+                const partners = await res.json();
+                
+                if(!partners.length) throw new Error("Invalid Partner ID");
+
+                currentId = id;
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('dashboard').classList.remove('hidden');
+                
+                loadProfile(partners[0]);
+                loadReviews(id);
+                btn.innerText = 'دخول';
+            } catch (error) {
+                alert('كود الشريك هذا غير صحيح!');
+                btn.innerText = 'دخول';
+            }
+        }
+
+        function loadProfile(p) {
+            document.getElementById('dash-name').innerText = p.name;
+            document.getElementById('dash-cat').innerText = `${p.category} في ${p.city}`;
+            document.getElementById('stat-rating').innerText = parseFloat(p.avg_rating || 5.0).toFixed(1);
+            document.getElementById('stat-reviews').innerText = p.review_count || 0;
+            document.getElementById('edit-bio').value = p.bio_ar || '';
+            document.getElementById('edit-city').value = p.city || '';
+            document.getElementById('edit-region').value = p.region || '';
+            document.getElementById('edit-response-time').value = p.avg_response_time || 'أقل من 30 دقيقة';
+            document.getElementById('edit-images').value = p.images ? JSON.parse(p.images).join(', ') : '';
+        }
+
+        async function loadReviews(id) {
+            const list = document.getElementById('seller-reviews');
+            try {
+                const res = await fetch(`${SUPABASE_URL}/rest/v1/reviews?provider_id=eq.${id}&order=timestamp.desc&select=*`, { headers: HEADERS });
+                const reviews = await res.json();
+                list.innerHTML = reviews.length ? '' : '<div class="col-span-full opacity-20 text-center py-20 font-black italic">لا توجد تقييمات حتى الآن.</div>';
+                reviews.forEach(r => {
+                    list.innerHTML += `
+                        <div class="apple-glass p-8 rounded-[32px] hairline space-y-4">
+                            <div class="flex justify-between items-center text-xs font-black">
+                                <span class="text-apple-blue">★ ${r.rating}</span>
+                                <span class="opacity-30">${new Date(r.timestamp).toLocaleDateString('ar-SA')}</span>
+                            </div>
+                            <p class="text-lg font-semibold leading-relaxed">${r.comment}</p>
+                            <div class="text-[11px] font-black opacity-30 pt-4 border-t border-black/5 dark:border-white/5 uppercase">العميل: ${r.user_name}</div>
+                        </div>
+                    `;
+                });
+            } catch(e) {}
+        }
+
+        async function handleUpdate(e) {
+            e.preventDefault();
+            const btn = document.getElementById('update-btn');
+            const images = document.getElementById('edit-images').value.split(',').map(s => s.trim()).filter(s => s);
+            const data = {
+                bio_ar: document.getElementById('edit-bio').value,
+                city: document.getElementById('edit-city').value,
+                region: document.getElementById('edit-region').value,
+                avg_response_time: document.getElementById('edit-response-time').value,
+                images: JSON.stringify(images)
+            };
+            
+            btn.innerText = 'جاري الحفظ...';
+            btn.disabled = true;
+
+            try {
+                await fetch(`${SUPABASE_URL}/rest/v1/providers?id=eq.${currentId}`, {
+                    method: 'PATCH',
+                    headers: HEADERS,
+                    body: JSON.stringify(data)
+                });
+                alert('✅ تم تحديث بياناتك بنجاح!');
+                login();
+            } catch (error) { alert('خطأ في شبكة السحابة'); } finally {
+                btn.innerText = 'حفظ التغييرات';
+                btn.disabled = false;
+            }
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('id')) {
+            document.getElementById('provider-id-input').value = urlParams.get('id');
+            login();
+        }
+    </script>
+</body>
+</html>

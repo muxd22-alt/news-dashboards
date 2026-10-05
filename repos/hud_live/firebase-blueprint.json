@@ -1,0 +1,95 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "Stores user profile data for both clients and vendors.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "role": { "type": "string", "enum": ["client", "vendor"], "description": "User role: client or vendor" },
+        "fullName": { "type": "string", "description": "Full legal name" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "city": { "type": "string" },
+        "companyName": { "type": "string", "description": "Optional company name for vendors" },
+        "crNumber": { "type": "string", "description": "Optional Commercial Registration number for vendors" },
+        "serviceCategories": { "type": "array", "items": { "type": "string" }, "description": "List of service IDs provided by the vendor" },
+        "isVerified": { "type": "boolean", "description": "Whether the vendor is verified by the platform" },
+        "photoURL": { "type": "string", "description": "URL to the user's profile picture" },
+        "portfolio": { "type": "array", "items": { "type": "string" }, "description": "Collection of vendor's portfolio work samples" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "role", "fullName", "email", "createdAt"]
+    },
+    "Request": {
+      "title": "Event Request",
+      "description": "A request for services posted by a client.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "clientId": { "type": "string", "description": "UID of the client who posted it" },
+        "clientName": { "type": "string" },
+        "title": { "type": "string" },
+        "type": { "type": "string", "description": "Event type key" },
+        "service": { "type": "string", "description": "Service ID key" },
+        "location": { "type": "string", "description": "City key" },
+        "date": { "type": "string" },
+        "guests": { "type": "number" },
+        "budget": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["live", "expired", "completed"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "expiresAt": { "type": "string", "format": "date-time" },
+        "vendorCount": { "type": "number", "description": "Number of bids received" }
+      },
+      "required": ["clientId", "title", "type", "service", "location", "date", "status", "createdAt", "expiresAt"]
+    },
+    "Bid": {
+      "title": "Service Bid",
+      "description": "A bid placed by a vendor on a request.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "requestId": { "type": "string" },
+        "vendorId": { "type": "string" },
+        "vendorName": { "type": "string" },
+        "vendorPhone": { "type": "string", "description": "Only visible to client when accepted" },
+        "vendorRating": { "type": "number" },
+        "amount": { "type": "number" },
+        "remarks": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "accepted", "rejected"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["requestId", "vendorId", "amount", "status", "createdAt"]
+    },
+    "Report": {
+      "title": "User Report",
+      "description": "A report filed against a user.",
+      "type": "object",
+      "properties": {
+        "reporterId": { "type": "string" },
+        "targetId": { "type": "string" },
+        "reason": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "User profiles indexed by UID"
+    },
+    "requests/{requestId}": {
+      "schema": "Request",
+      "description": "Live event requests"
+    },
+    "requests/{requestId}/bids/{bidId}": {
+      "schema": "Bid",
+      "description": "Bids for a specific request"
+    },
+    "reports/{reportId}": {
+      "schema": "Report",
+      "description": "Platform reports"
+    }
+  }
+}

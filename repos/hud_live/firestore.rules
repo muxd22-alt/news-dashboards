@@ -1,0 +1,94 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      let isEmailAdmin = ('email' in request.auth.token && request.auth.token.email == 'swcc2012@gmail.com');
+      let userRole = exists(/databases/$(database)/documents/users/$(request.auth.uid)) ? 
+                      get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role : null;
+      return isSignedIn() && (isEmailAdmin || userRole in ['admin', 'viewer', 'editor']);
+    }
+
+    function isEditor() {
+      let isEmailAdmin = ('email' in request.auth.token && request.auth.token.email == 'swcc2012@gmail.com');
+      let userRole = exists(/databases/$(database)/documents/users/$(request.auth.uid)) ? 
+                      get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role : null;
+      return isSignedIn() && (isEmailAdmin || userRole in ['admin', 'editor']);
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    match /users/{userId} {
+      allow get: if isOwner(userId) || isAdmin();
+      allow list: if isAdmin();
+      allow create: if isOwner(userId) 
+        && incoming().uid == request.auth.uid 
+        && incoming().role in ['client', 'vendor', 'admin', 'viewer', 'editor']
+        && incoming().createdAt == request.time;
+      allow update: if isOwner(userId) || isEditor();
+      allow delete: if isOwner(userId) || isEditor();
+    }
+    
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isEditor();
+    }
+
+    match /{path=**}/bids/{bidId} {
+      allow read: if isSignedIn();
+    }
+
+    match /requests/{requestId} {
+      // Allow everyone (residents/guests) to see requests
+      allow read: if true;
+      
+      allow create: if isSignedIn() 
+        && incoming().clientId == request.auth.uid
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'client'
+        && incoming().status == 'live'
+        && incoming().createdAt == request.time;
+      allow update: if isOwner(existing().clientId) || isAdmin()
+        || (isSignedIn() && incoming().diff(existing()).affectedKeys().hasOnly(['vendorCount', 'hasUnreadBids']));
+      allow delete: if isOwner(existing().clientId) || isAdmin();
+
+      match /bids/{bidId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn()
+          && incoming().vendorId == request.auth.uid
+          && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'vendor'
+          && incoming().requestId == requestId
+          && incoming().createdAt == request.time;
+        allow update, delete: if isSignedIn() && (
+          isOwner(existing().vendorId) || 
+          isOwner(existing().clientId) || 
+          isOwner(get(/databases/$(database)/documents/requests/$(requestId)).data.clientId) ||
+          isAdmin()
+        );
+      }
+    }
+
+    match /reports/{reportId} {
+      allow create: if isSignedIn() && incoming().reporterId == request.auth.uid;
+      allow read, write: if isAdmin();
+    }
+  }
+}
+

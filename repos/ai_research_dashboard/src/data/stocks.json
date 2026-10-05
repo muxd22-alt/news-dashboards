@@ -1,0 +1,142 @@
+{
+  "updatedAt": "2026-03-25T05:00:19.987Z",
+  "categories": [
+    {
+      "name": "AI Semiconductors",
+      "id": "semiconductor",
+      "stocks": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA",
+          "price": 175.2,
+          "change": -0.4800000000000182,
+          "changePercent": -0.27322404371585735
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD",
+          "price": 205.37,
+          "change": 2.6899999999999977,
+          "changePercent": 1.327215314781921
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel",
+          "price": 44.06,
+          "change": 0.05000000000000426,
+          "changePercent": 0.11361054305840551
+        },
+        {
+          "symbol": "QCOM",
+          "name": "Qualcomm",
+          "price": 128.67,
+          "change": 0.3199999999999932,
+          "changePercent": 0.2493182703544941
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom",
+          "price": 318.29,
+          "change": -4.21999999999997,
+          "changePercent": -1.3084865585563148
+        },
+        {
+          "symbol": "TSM",
+          "name": "TSMC",
+          "price": 343.25,
+          "change": 4.800000000000011,
+          "changePercent": 1.4182301669375126
+        },
+        {
+          "symbol": "ARM",
+          "name": "Arm Holdings",
+          "price": 134.96,
+          "change": -1.9299999999999784,
+          "changePercent": -1.4098911534808813
+        }
+      ]
+    },
+    {
+      "name": "Big Tech",
+      "id": "bigtech",
+      "stocks": [
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft",
+          "price": 372.74,
+          "change": -10.46999999999997,
+          "changePercent": -2.732183398136784
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet",
+          "price": 290.44,
+          "change": -11.759999999999991,
+          "changePercent": -3.89146260754467
+        },
+        {
+          "symbol": "META",
+          "name": "Meta",
+          "price": 592.92,
+          "change": -11.460000000000036,
+          "changePercent": -1.8961580462622913
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "price": 207.24,
+          "change": -3.009999999999991,
+          "changePercent": -1.4316290130796627
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple",
+          "price": 251.64,
+          "change": 0.14999999999997726,
+          "changePercent": 0.059644518668725305
+        }
+      ]
+    },
+    {
+      "name": "AI Pure-Play",
+      "id": "ai-pure",
+      "stocks": [
+        {
+          "symbol": "PLTR",
+          "name": "Palantir",
+          "price": 154.78,
+          "change": -6.1200000000000045,
+          "changePercent": -3.803604723430705
+        },
+        {
+          "symbol": "AI",
+          "name": "C3.ai",
+          "price": 8.29,
+          "change": -0.4300000000000015,
+          "changePercent": -4.931192660550476
+        },
+        {
+          "symbol": "SNOW",
+          "name": "Snowflake",
+          "price": 161.34,
+          "change": -12.859999999999985,
+          "changePercent": -7.382319173363941
+        },
+        {
+          "symbol": "PATH",
+          "name": "UiPath",
+          "price": 11.07,
+          "change": -1.0600000000000005,
+          "changePercent": -8.738664468260515
+        },
+        {
+          "symbol": "DDOG",
+          "name": "Datadog",
+          "price": 122.57,
+          "change": -6.659999999999997,
+          "changePercent": -5.153602104774431
+        }
+      ]
+    }
+  ]
+}
